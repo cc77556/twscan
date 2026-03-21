@@ -1,0 +1,28 @@
+{
+  "etfCode": "00981A",
+  "etfName": "野村臺灣創新科技50 ETF",
+  "lastUpdated": "2026-03-16",
+  "source": "投信投顧公會",
+  "holdings": [
+    {"rank": 1, "code": "2330", "name": "台積電", "weight": 8.79, "shares": 3975000},
+    {"rank": 2, "code": "2383", "name": "台光電", "weight": 7.52, "shares": 2427000},
+    {"rank": 3, "code": "2308", "name": "台達電", "weight": 7.02, "shares": 4309000},
+    {"rank": 4, "code": "2368", "name": "金像電", "weight": 6.1, "shares": 5600000},
+    {"rank": 5, "code": "6223", "name": "旺矽", "weight": 5.84, "shares": 1366000},
+    {"rank": 6, "code": "3017", "name": "奇鋐", "weight": 5.64, "shares": 2572000},
+    {"rank": 7, "code": "3653", "name": "健策", "weight": 5.27, "shares": 1297000},
+    {"rank": 8, "code": "2345", "name": "智邦", "weight": 4.92, "shares": 2952000},
+    {"rank": 9, "code": "3665", "name": "貿聯-KY", "weight": 4.42, "shares": 2243848},
+    {"rank": 10, "code": "3037", "name": "欣興", "weight": 3.92, "shares": 5952000},
+    {"rank": 11, "code": "8046", "name": "南電", "weight": 3.16, "shares": 4656000},
+    {"rank": 12, "code": "2327", "name": "國巨", "weight": 2.74, "shares": 8794000},
+    {"rank": 13, "code": "6510", "name": "精測", "weight": 2.64, "shares": 590000},
+    {"rank": 14, "code": "5274", "name": "信驊", "weight": 2.53, "shares": 205000},
+    {"rank": 15, "code": "3661", "name": "世芯-KY", "weight": 2.21, "shares": 589000},
+    {"rank": 16, "code": "2449", "name": "京元電子", "weight": 2.03, "shares": 5886000},
+    {"rank": 17, "code": "8210", "name": "勤誠", "weight": 1.98, "shares": 1857000},
+    {"rank": 18, "code": "6805", "name": "富世達", "weight": 1.87, "shares": 893000},
+    {"rank": 19, "code": "6515", "name": "穎崴", "weight": 1.83, "shares": 248000},
+    {"rank": 20, "code": "3711", "name": "日月光投控", "weight": 1.72, "shares": 4258000}
+  ]
+}

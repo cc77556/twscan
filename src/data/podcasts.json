@@ -1,0 +1,38 @@
+[
+  {
+    "id": "gooaye",
+    "name": "股癌",
+    "icon": "🦊",
+    "latestEpisode": "EP646",
+    "summary": "光通訊/CPO 是當前最明確趨勢，國民制服股，回檔就是買點。美光毛利率 70%+ 利多不漲是警訊，記憶體漲100%+虹吸其他漲價股資金。漲價股要區分需求驅動（高階MLCC、電感）vs 成本轉嫁。美股 VIX 40+ 是買點，逆勢佈局，油價橫盤是蹲點訊號。SMR 小型核反應爐實際落地難度比想像高很多。散熱產業持續成長，冷媒/冰水等高階方案可能重新被推上檯面。",
+    "date": "2026-03-19",
+    "spotifyUrl": "https://open.spotify.com/show/5UBnDP0IhNzfRwKMfSYCJO"
+  },
+  {
+    "id": "statementdog",
+    "name": "財報狗",
+    "icon": "🐕",
+    "latestEpisode": "EP510",
+    "summary": "NVIDIA GTC 大會揭曉次世代算力架構。Groq 被 NVIDIA 收購後採用推測性解碼，速度提升 20 倍。算力最大瓶頸不是電力，而是 EUV 光刻機（ASML）+ 記憶體。每顆 AI 晶片需約 3.5 台 EUV 機台，無塵室廠房不夠，真正放量要等到 2027 年。台積電是算力關鍵瓶頸，ASML 訂單排到明後年。",
+    "date": "2026-03-18",
+    "spotifyUrl": "https://open.spotify.com/show/7yjj1bKSMfMRxPRaEpmMiQ"
+  },
+  {
+    "id": "fantong",
+    "name": "股海飯桶",
+    "icon": "🍚",
+    "latestEpisode": "EP61",
+    "summary": "大盤卡在盤整位置，族群輪動中，飯桶偏多。記憶體回溫，南爾科漲停，DDR4 持續緊缺。載板星星從 100 漲到 500、南電從 180 到 560。封測 OSAT 元年：台積電 CoWoS 產能不夠，力成投 200 億先進封裝，AWS 訂單在京兆城測試。FOPOP 量產要 2028 年。光通訊前面漲多，GTC 利多也難再上。",
+    "date": "2026-03-17",
+    "spotifyUrl": "https://open.spotify.com/show/3HAuJYASJHm3PIsHgmdNbR"
+  },
+  {
+    "id": "anchors",
+    "name": "定錨產業筆記",
+    "icon": "⚓",
+    "latestEpisode": "EP8",
+    "summary": "成熟製程正經歷結構性供需拐點：台積電+三星退出，二線廠接單，產能利用率提升，漲價循環啟動。世界先進產能利用率回升至 80-85%，下半年有望滿載，已取得客戶同意調漲代工費達雙位數。聯電 22nm 需求強勁，與 Intel 合作 12nm 製程。力積電以 $18 億美元出售銅鑼 P5 廠房給美光，轉型 DRAM 先進封裝代工。",
+    "date": "2026-03-16",
+    "spotifyUrl": "https://open.spotify.com/show/3p32jySGMb0yqEoShnJzaR"
+  }
+]

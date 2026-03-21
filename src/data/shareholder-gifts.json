@@ -1,0 +1,22 @@
+[
+  {"code": "2330", "name": "台積電", "meetingDate": "2026-06-04", "lastBuyDate": "2026-04-03", "gift": "環保隨行杯", "giftValue": 200, "year": 2026},
+  {"code": "2317", "name": "鴻海", "meetingDate": "2026-06-18", "lastBuyDate": "2026-04-17", "gift": "不鏽鋼保溫杯", "giftValue": 180, "year": 2026},
+  {"code": "2454", "name": "聯發科", "meetingDate": "2026-06-11", "lastBuyDate": "2026-04-10", "gift": "精美行動電源", "giftValue": 350, "year": 2026},
+  {"code": "2412", "name": "中華電", "meetingDate": "2026-06-25", "lastBuyDate": "2026-04-24", "gift": "環保購物袋組", "giftValue": 120, "year": 2026},
+  {"code": "2382", "name": "廣達", "meetingDate": "2026-06-12", "lastBuyDate": "2026-04-13", "gift": "多功能工具組", "giftValue": 150, "year": 2026},
+  {"code": "2308", "name": "台達電", "meetingDate": "2026-06-06", "lastBuyDate": "2026-04-07", "gift": "LED 護眼檯燈", "giftValue": 500, "year": 2026},
+  {"code": "1301", "name": "台塑", "meetingDate": "2026-06-20", "lastBuyDate": "2026-04-20", "gift": "洗衣精禮盒", "giftValue": 120, "year": 2026},
+  {"code": "1303", "name": "南亞", "meetingDate": "2026-06-20", "lastBuyDate": "2026-04-20", "gift": "保鮮盒三件組", "giftValue": 150, "year": 2026},
+  {"code": "2002", "name": "中鋼", "meetingDate": "2026-06-25", "lastBuyDate": "2026-04-24", "gift": "鋼鐵杯墊組", "giftValue": 80, "year": 2026},
+  {"code": "2886", "name": "兆豐金", "meetingDate": "2026-06-13", "lastBuyDate": "2026-04-14", "gift": "悠遊卡", "giftValue": 100, "year": 2026},
+  {"code": "2881", "name": "富邦金", "meetingDate": "2026-06-19", "lastBuyDate": "2026-04-17", "gift": "折疊傘", "giftValue": 150, "year": 2026},
+  {"code": "2882", "name": "國泰金", "meetingDate": "2026-06-18", "lastBuyDate": "2026-04-16", "gift": "環保餐具組", "giftValue": 100, "year": 2026},
+  {"code": "2884", "name": "玉山金", "meetingDate": "2026-06-11", "lastBuyDate": "2026-04-10", "gift": "MIT 毛巾禮盒", "giftValue": 120, "year": 2026},
+  {"code": "2891", "name": "中信金", "meetingDate": "2026-06-13", "lastBuyDate": "2026-04-14", "gift": "矽膠摺疊碗", "giftValue": 100, "year": 2026},
+  {"code": "2357", "name": "華碩", "meetingDate": "2026-06-05", "lastBuyDate": "2026-04-07", "gift": "無線滑鼠", "giftValue": 400, "year": 2026},
+  {"code": "2912", "name": "統一超", "meetingDate": "2026-06-12", "lastBuyDate": "2026-04-13", "gift": "7-11 商品卡 100 元", "giftValue": 100, "year": 2026},
+  {"code": "1216", "name": "統一", "meetingDate": "2026-06-18", "lastBuyDate": "2026-04-16", "gift": "統一產品禮盒", "giftValue": 120, "year": 2026},
+  {"code": "2603", "name": "長榮", "meetingDate": "2026-06-25", "lastBuyDate": "2026-04-24", "gift": "長榮航空行李吊牌", "giftValue": 80, "year": 2026},
+  {"code": "3008", "name": "大立光", "meetingDate": "2026-06-10", "lastBuyDate": "2026-04-09", "gift": "微纖維擦拭布組", "giftValue": 60, "year": 2026},
+  {"code": "2303", "name": "聯電", "meetingDate": "2026-06-11", "lastBuyDate": "2026-04-10", "gift": "不鏽鋼便當盒", "giftValue": 200, "year": 2026}
+]
