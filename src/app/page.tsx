@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { attentionStocks, dispositionStocks, dividends, shareholderGifts } from "@/data/config";
+import { attentionStocks, dispositionStocks } from "@/data/config";
 
 const features = [
   {
@@ -8,20 +8,6 @@ const features = [
     desc: "野村臺灣創新科技50 持股追蹤",
     icon: "\uD83D\uDCCA",
     color: "from-blue-500/20 to-blue-600/5",
-  },
-  {
-    href: "/dividends",
-    title: "除權息日曆",
-    desc: "上市櫃公司除權息時程與殖利率",
-    icon: "\uD83D\uDCC5",
-    color: "from-emerald-500/20 to-emerald-600/5",
-  },
-  {
-    href: "/gifts",
-    title: "股東會紀念品",
-    desc: "最後買進日倒數與紀念品資訊",
-    icon: "\uD83C\uDF81",
-    color: "from-amber-500/20 to-amber-600/5",
   },
   {
     href: "/alert",
@@ -36,13 +22,6 @@ const features = [
     desc: "股癌、財報狗等熱門節目重點整理",
     icon: "\uD83C\uDFA7",
     color: "from-purple-500/20 to-purple-600/5",
-  },
-  {
-    href: "/etf",
-    title: "ETF 比較",
-    desc: "熱門台股 ETF 費用、殖利率比較",
-    icon: "\uD83D\uDD0D",
-    color: "from-cyan-500/20 to-cyan-600/5",
   },
 ];
 
@@ -62,11 +41,9 @@ export default function Home() {
       </section>
 
       {/* Quick stats */}
-      <section className="mb-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+      <section className="mb-12 grid grid-cols-2 gap-3 md:gap-4">
         <StatCard label="注意股" value={`${attentionStocks.stocks.length} 檔`} accent="text-tw-red" />
         <StatCard label="處置股" value={`${dispositionStocks.stocks.length} 檔`} accent="text-tw-red" />
-        <StatCard label="除權息" value={`${dividends.stocks.length} 檔`} accent="text-tw-green" />
-        <StatCard label="紀念品" value={`${shareholderGifts.length} 家`} accent="text-tw-accent" />
       </section>
 
       {/* Feature grid */}

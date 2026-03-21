@@ -6,11 +6,8 @@ import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { href: "/etf/00981a", label: "00981A" },
-  { href: "/dividends", label: "除權息" },
-  { href: "/gifts", label: "紀念品" },
   { href: "/alert", label: "注意/處置" },
   { href: "/podcast", label: "Podcast" },
-  { href: "/etf", label: "ETF 比較" },
 ];
 
 export default function Header() {
