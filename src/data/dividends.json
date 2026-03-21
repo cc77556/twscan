@@ -1,8 +1,11 @@
 {
   "title": "除權除息預告",
   "lastUpdated": "2026-03-21",
-  "source": "TWSE",
-  "note": "TWSE OpenAPI TWT49U endpoint unavailable; data compiled from public announcements",
+  "fetchedAt": "2026-03-21T00:00:00+08:00",
+  "source": "公開資訊觀測站 / 各公司公告",
+  "isSampleData": true,
+  "disclaimer": "本資料為示範資料，僅供參考。除權息日期及股利金額尚未經各公司正式公告，實際數據請以證交所公告為準。",
+  "note": "TWSE OpenAPI TWT49U endpoint unavailable (302); dividend amounts and ex-dates are estimates based on prior year patterns. Dividend yields may differ from TWSE BWIBBU_d real-time data.",
   "stocks": [
     {"code": "2330", "name": "台積電", "exDate": "2026-06-19", "cashDividend": 17.5, "stockDividend": 0, "dividendYield": 1.62, "year": 2025},
     {"code": "2317", "name": "鴻海", "exDate": "2026-07-17", "cashDividend": 6.0, "stockDividend": 0, "dividendYield": 2.88, "year": 2025},

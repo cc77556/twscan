@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { podcasts } from "@/data/config";
 import type { PodcastEntry } from "@/data/config";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "Podcast 投資摘要 — 股癌 / 財報狗 / 飯桶 / 定錨",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function PodcastPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <Disclaimer />
       <div className="mb-6">
         <h1 className="text-2xl font-bold md:text-3xl">Podcast 投資摘要</h1>
         <p className="mt-2 text-sm text-tw-dark-muted dark:text-tw-dark-muted text-tw-light-muted">

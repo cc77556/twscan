@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ETFCompareClient from "./client";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "ETF 比較 — 0050 / 0056 / 00878 / 00981A / 006208",
@@ -59,6 +60,7 @@ const etfCompareData = [
 export default function ETFComparePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <Disclaimer />
       <div className="mb-6">
         <h1 className="text-2xl font-bold md:text-3xl">ETF 比較</h1>
         <p className="mt-2 text-sm text-tw-dark-muted dark:text-tw-dark-muted text-tw-light-muted">

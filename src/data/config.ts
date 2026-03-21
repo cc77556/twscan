@@ -40,6 +40,8 @@ export interface AttentionStocksData {
   lastUpdated: string;
   dateRange: string;
   source: string;
+  fetchedAt?: string;
+  isSampleData?: boolean;
   stocks: AttentionStock[];
 }
 
@@ -59,6 +61,8 @@ export interface DispositionStocksData {
   title: string;
   lastUpdated: string;
   source: string;
+  fetchedAt?: string;
+  isSampleData?: boolean;
   stocks: DispositionStock[];
 }
 
@@ -75,7 +79,9 @@ export interface ETFData {
   etfCode: string;
   etfName: string;
   lastUpdated: string;
+  fetchedAt?: string;
   source?: string;
+  isSampleData?: boolean;
   holdings: ETFHolding[];
 }
 
@@ -93,7 +99,10 @@ export interface DividendStock {
 export interface DividendsData {
   title: string;
   lastUpdated: string;
+  fetchedAt?: string;
   source: string;
+  isSampleData?: boolean;
+  disclaimer?: string;
   note?: string;
   stocks: DividendStock[];
 }
@@ -120,6 +129,27 @@ export interface ShareholderGift {
   year: number;
 }
 
+export interface ShareholderGiftsData {
+  title: string;
+  lastUpdated: string;
+  fetchedAt?: string;
+  source: string;
+  isSampleData: boolean;
+  disclaimer?: string;
+  note?: string;
+  items: ShareholderGift[];
+}
+
+export interface PodcastsData {
+  title: string;
+  lastUpdated: string;
+  fetchedAt?: string;
+  source: string;
+  isSampleData: boolean;
+  note?: string;
+  items: PodcastEntry[];
+}
+
 // ─── Data Loaders (for use in components) ────────────────────────
 
 import attentionRaw from "./attention-stocks.json";
@@ -133,5 +163,9 @@ export const attentionStocks = attentionRaw as AttentionStocksData;
 export const dispositionStocks = dispositionRaw as DispositionStocksData;
 export const etf00981a = etf00981aRaw as ETFData;
 export const dividends = dividendsRaw as DividendsData;
-export const podcasts = podcastsRaw as PodcastEntry[];
-export const shareholderGifts = giftsRaw as ShareholderGift[];
+const podcastsData = podcastsRaw as PodcastsData;
+export const podcasts = podcastsData.items;
+export const podcastsMeta = podcastsData;
+const giftsData = giftsRaw as ShareholderGiftsData;
+export const shareholderGifts = giftsData.items;
+export const shareholderGiftsMeta = giftsData;

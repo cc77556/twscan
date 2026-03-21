@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { etf00981a } from "@/data/config";
 import ETF00981AClient from "./client";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "00981A 野村臺灣創新科技50 ETF 持股明細",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function ETF00981APage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <Disclaimer />
       <div className="mb-6">
         <h1 className="text-2xl font-bold md:text-3xl">
           {etf00981a.etfCode} {etf00981a.etfName}

@@ -2,7 +2,9 @@
   "etfCode": "00981A",
   "etfName": "野村臺灣創新科技50 ETF",
   "lastUpdated": "2026-03-16",
-  "source": "投信投顧公會",
+  "fetchedAt": "2026-03-21T00:00:00+08:00",
+  "source": "ezmoney.com.tw / 投信投顧公會",
+  "isSampleData": false,
   "holdings": [
     {"rank": 1, "code": "2330", "name": "台積電", "weight": 8.79, "shares": 3975000},
     {"rank": 2, "code": "2383", "name": "台光電", "weight": 7.52, "shares": 2427000},

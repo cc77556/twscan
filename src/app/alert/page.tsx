@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { attentionStocks, dispositionStocks } from "@/data/config";
 import AlertClient from "./client";
+import Disclaimer from "@/components/Disclaimer";
 
 export const metadata: Metadata = {
   title: "注意股 / 處置股 — TWSE 警示清單",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function AlertPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <Disclaimer />
       <div className="mb-6">
         <h1 className="text-2xl font-bold md:text-3xl">注意股 / 處置股</h1>
         <p className="mt-2 text-sm text-tw-dark-muted dark:text-tw-dark-muted text-tw-light-muted">

@@ -3,6 +3,8 @@
   "lastUpdated": "2026-03-21",
   "dateRange": "2026-03-17 ~ 2026-03-21",
   "source": "TWSE",
+  "fetchedAt": "2026-03-21T00:00:00+08:00",
+  "isSampleData": false,
   "stocks": [
     {
       "code": "1711",
