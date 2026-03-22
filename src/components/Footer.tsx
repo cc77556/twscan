@@ -3,6 +3,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-tw-dark-border dark:border-tw-dark-border border-tw-light-border">
+      <div className="bg-amber-50 dark:bg-amber-900/30 py-2 text-center text-xs text-amber-800 dark:text-amber-200">
+        📅 資料最後更新：2026-03-21 | 股市資料每日變動，請以證交所公告為準
+      </div>
       <div className="mx-auto max-w-7xl px-4 py-6">
         <div className="flex flex-col items-center gap-3 text-center text-xs text-tw-dark-muted dark:text-tw-dark-muted text-tw-light-muted">
           <p className="max-w-2xl leading-relaxed">
