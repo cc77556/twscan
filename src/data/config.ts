@@ -4,11 +4,11 @@
 
 export const siteConfig = {
   name: "TWScan",
-  title: "TWScan — 台股投資儀表板",
-  description: "台灣股市即時資訊：注意/處置股、ETF 持股、除權息、股東會紀念品、Podcast 摘要",
+  title: "市場雷達 TWScan — 全球市場每日情報站",
+  description: "全球市場即時資訊：恐慌指數、VIX、全球指數、總經數據、三大法人、注意/處置股、ETF 追蹤、Podcast 投資摘要",
   url: "https://twscan.cc",
   locale: "zh-TW",
-  lastUpdated: "2026-03-21",
+  lastUpdated: "2026-03-24",
 } as const;
 
 // ─── Data Source Paths ───────────────────────────────────────────
@@ -20,6 +20,7 @@ export const dataPaths = {
   dividends: "./dividends.json",
   podcasts: "./podcasts.json",
   shareholderGifts: "./shareholder-gifts.json",
+  marketData: "./market-data.json",
 } as const;
 
 // ─── Type Definitions ────────────────────────────────────────────
@@ -118,6 +119,76 @@ export interface PodcastEntry {
   spotifyUrl: string;
 }
 
+/** Market data types */
+export interface MarketSentiment {
+  fearGreed: { value: number; previous: number; label: string; source: string; sourceUrl: string };
+  vix: { value: number; previous: number; change: number; changePercent: number; source: string; sourceUrl: string };
+}
+
+export interface ThermometerSignal {
+  name: string;
+  value: number;
+  unit?: string;
+  threshold: string;
+  triggered: boolean;
+  desc: string;
+}
+
+export interface MarketIndex {
+  name: string;
+  symbol: string;
+  value: number;
+  change: number;
+  changePercent: number;
+  flag: string;
+}
+
+export interface MacroData {
+  us10y: { label: string; value: number; unit: string };
+  us13w: { label: string; value: number; unit: string };
+  yieldSpread: { label: string; value: number; unit: string; status: string };
+  fedRate: { label: string; value: number; unit: string; note: string };
+}
+
+export interface InstitutionalData {
+  date: string;
+  foreign: { label: string; value: number; unit: string };
+  investment: { label: string; value: number; unit: string };
+  dealer: { label: string; value: number; unit: string };
+  source: string;
+  sourceUrl: string;
+}
+
+export interface SynthesisCheck {
+  label: string;
+  pass: boolean | null;
+  note: string;
+}
+
+export interface MarketSynthesis {
+  verdict: string;
+  checks: { macro: SynthesisCheck; sentiment: SynthesisCheck; technical: SynthesisCheck };
+  summary: string;
+  disclaimer: string;
+}
+
+export interface MarketData {
+  title: string;
+  lastUpdated: string;
+  fetchedAt: string;
+  source: string;
+  sentiment: MarketSentiment;
+  thermometer: { signals: ThermometerSignal[]; triggeredCount: number; total: number; source: string; sourceUrl: string };
+  indices: MarketIndex[];
+  indicesSource: string;
+  indicesSourceUrl: string;
+  macro: MacroData;
+  macroSource: string;
+  macroSourceUrl: string;
+  institutional: InstitutionalData;
+  synthesis: MarketSynthesis;
+}
+
 /** Shareholder meeting gift */
 export interface ShareholderGift {
   code: string;
@@ -158,6 +229,7 @@ import etf00981aRaw from "./etf-00981a.json";
 import dividendsRaw from "./dividends.json";
 import podcastsRaw from "./podcasts.json";
 import giftsRaw from "./shareholder-gifts.json";
+import marketRaw from "./market-data.json";
 
 export const attentionStocks = attentionRaw as AttentionStocksData;
 export const dispositionStocks = dispositionRaw as DispositionStocksData;
@@ -169,3 +241,4 @@ export const podcastsMeta = podcastsData;
 const giftsData = giftsRaw as ShareholderGiftsData;
 export const shareholderGifts = giftsData.items;
 export const shareholderGiftsMeta = giftsData;
+export const marketData = marketRaw as MarketData;

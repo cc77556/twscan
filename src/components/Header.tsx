@@ -5,8 +5,8 @@ import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
-  { href: "/etf/00981a", label: "00981A" },
   { href: "/alert", label: "注意/處置" },
+  { href: "/etf/00981a", label: "00981A" },
   { href: "/podcast", label: "Podcast" },
 ];
 
@@ -17,7 +17,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-tw-dark-border dark:border-tw-dark-border border-tw-light-border bg-tw-dark-surface/95 dark:bg-tw-dark-surface/95 bg-tw-light-surface/95 backdrop-blur-sm light:bg-tw-light-surface/95 light:border-tw-light-border">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight">
-          <span className="text-tw-accent">台股雷達</span>
+          <span className="text-tw-accent">市場雷達</span>
           <span className="text-sm font-normal opacity-60">TWScan</span>
         </Link>
 

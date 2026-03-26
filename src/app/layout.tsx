@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -40,10 +41,12 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('twscan-theme');if(t==='light'){document.documentElement.classList.remove('dark');document.documentElement.classList.add('light')}}catch(e){}})()`,
           }}
         />
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N"></script>
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");` }} />
-      </head>
+</head>
       <body className="flex min-h-screen flex-col antialiased">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");`}
+        </Script>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

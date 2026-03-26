@@ -1,0 +1,84 @@
+{
+  "title": "全球市場總覽",
+  "lastUpdated": "2026-03-24",
+  "fetchedAt": "2026-03-24T08:00:00+08:00",
+  "source": "Yahoo Finance / CNN / TWSE",
+
+  "sentiment": {
+    "fearGreed": {
+      "value": 16,
+      "previous": 15,
+      "label": "極端恐懼",
+      "source": "CNN Fear & Greed Index",
+      "sourceUrl": "https://www.cnn.com/markets/fear-and-greed"
+    },
+    "vix": {
+      "value": 26.15,
+      "previous": 26.78,
+      "change": -0.63,
+      "changePercent": -2.35,
+      "source": "Yahoo Finance",
+      "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"
+    }
+  },
+
+  "thermometer": {
+    "signals": [
+      { "name": "F&G", "value": 16, "threshold": "<25", "triggered": true, "desc": "恐懼貪婪指數低於 25" },
+      { "name": "VIX", "value": 26.1, "threshold": ">28", "triggered": false, "desc": "波動率指數高於 28" },
+      { "name": "RSI", "value": 37.2, "threshold": "<35", "triggered": false, "desc": "S&P 500 RSI(14) 低於 35" },
+      { "name": "200MA", "value": -0.2, "unit": "%", "threshold": "<-5%", "triggered": false, "desc": "距 200 日均線跌幅超過 5%" },
+      { "name": "回撤", "value": -5.5, "unit": "%", "threshold": "<-12%", "triggered": false, "desc": "從 52 週高點回撤超過 12%" }
+    ],
+    "triggeredCount": 1,
+    "total": 5,
+    "source": "Yahoo Finance / CNN",
+    "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC/"
+  },
+
+  "indices": [
+    { "name": "台灣加權", "symbol": "^TWII", "value": 22722.50, "change": -569.84, "changePercent": -2.45, "flag": "🇹🇼" },
+    { "name": "S&P 500", "symbol": "^GSPC", "value": 5667.56, "change": 64.48, "changePercent": 1.15, "flag": "🇺🇸" },
+    { "name": "NASDAQ 100", "symbol": "^NDX", "value": 19753.25, "change": 269.01, "changePercent": 1.38, "flag": "🇺🇸" },
+    { "name": "道瓊工業", "symbol": "^DJI", "value": 41985.35, "change": 674.62, "changePercent": 1.63, "flag": "🇺🇸" },
+    { "name": "費半指數", "symbol": "^SOX", "value": 4585.22, "change": 102.30, "changePercent": 2.28, "flag": "🇺🇸" },
+    { "name": "日經 225", "symbol": "^N225", "value": 37677.06, "change": -301.72, "changePercent": -0.80, "flag": "🇯🇵" },
+    { "name": "恒生指數", "symbol": "^HSI", "value": 23344.62, "change": -237.18, "changePercent": -1.01, "flag": "🇭🇰" },
+    { "name": "USD/TWD", "symbol": "USDTWD=X", "value": 32.82, "change": 0.22, "changePercent": 0.69, "flag": "💱" },
+    { "name": "美元指數", "symbol": "DX-Y.NYB", "value": 104.18, "change": -0.49, "changePercent": -0.47, "flag": "💵" },
+    { "name": "黃金", "symbol": "GC=F", "value": 3042.50, "change": -87.80, "changePercent": -2.81, "flag": "🥇" },
+    { "name": "原油 WTI", "symbol": "CL=F", "value": 68.28, "change": -6.99, "changePercent": -9.27, "flag": "🛢️" },
+    { "name": "比特幣", "symbol": "BTC-USD", "value": 84235.00, "change": 1205.00, "changePercent": 1.45, "flag": "₿" }
+  ],
+  "indicesSource": "Yahoo Finance",
+  "indicesSourceUrl": "https://finance.yahoo.com/markets/",
+
+  "macro": {
+    "us10y": { "label": "美債 10Y 殖利率", "value": 4.33, "unit": "%" },
+    "us13w": { "label": "13W T-bill 殖利率", "value": 4.31, "unit": "%" },
+    "yieldSpread": { "label": "10Y−13W 利差", "value": 0.02, "unit": "%", "status": "正常" },
+    "fedRate": { "label": "Fed 基準利率", "value": 4.33, "unit": "%", "note": "EFFR 近似" }
+  },
+  "macroSource": "U.S. Treasury / Fed",
+  "macroSourceUrl": "https://finance.yahoo.com/markets/bonds/",
+
+  "institutional": {
+    "date": "2026-03-21",
+    "foreign": { "label": "外資", "value": -839.23, "unit": "億" },
+    "investment": { "label": "投信", "value": 105.35, "unit": "億" },
+    "dealer": { "label": "自營商", "value": -311.12, "unit": "億" },
+    "source": "TWSE 證交所",
+    "sourceUrl": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html"
+  },
+
+  "synthesis": {
+    "verdict": "審慎觀望",
+    "checks": {
+      "macro": { "label": "總經", "pass": null, "note": "高利率環境" },
+      "sentiment": { "label": "情緒", "pass": false, "note": "極端恐懼" },
+      "technical": { "label": "技術", "pass": false, "note": "趨勢偏弱" }
+    },
+    "summary": "F&G 16（極端恐懼），RSI 37.2，EFFR 4.33%，殖利率曲線正常。市場指標分歧，以觀望為主，等待更多確認訊號。",
+    "disclaimer": "規則系統分析，僅供參考，不構成投資建議"
+  }
+}
