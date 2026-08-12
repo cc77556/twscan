@@ -14,6 +14,17 @@ export default function Footer() {
           <p className="leading-relaxed">
             資料來源：臺灣證券交易所、公開資訊觀測站
           </p>
+          <p className="leading-relaxed">
+            開發者？本站同源的台股資料 API：
+            <a
+              href="https://apify.com/chamarix"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline-offset-2 hover:underline hover:text-tw-accent transition-colors"
+            >
+              Taiwan Market Data APIs
+            </a>
+          </p>
           <div className="flex items-center gap-3">
             <Link href="/terms" className="underline-offset-2 hover:underline hover:text-tw-accent transition-colors">
               服務條款
