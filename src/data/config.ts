@@ -93,8 +93,10 @@ export interface DividendStock {
   exDate: string;
   cashDividend: number;
   stockDividend: number;
-  dividendYield: number;
-  year: number;
+  /** 單次事件殖利率（現金股利 ÷ 最近收盤價）；無收盤價（如新掛牌）時為 null */
+  dividendYield: number | null;
+  /** 股利所屬年度；自動更新資料源（TWT48U）不提供，故為選填 */
+  year?: number;
 }
 
 export interface DividendsData {

@@ -42,11 +42,14 @@ export default function DividendsClient({ stocks }: { stocks: DividendStock[] })
       key: "dividendYield",
       label: "殖利率",
       align: "right" as const,
-      render: (row: DividendStock) => (
-        <span className={`font-mono font-semibold ${row.dividendYield >= 5 ? "text-tw-red" : row.dividendYield >= 3 ? "text-amber-400" : ""}`}>
-          {row.dividendYield.toFixed(2)}%
-        </span>
-      ),
+      render: (row: DividendStock) =>
+        row.dividendYield === null ? (
+          <span className="font-mono text-tw-muted">—</span>
+        ) : (
+          <span className={`font-mono font-semibold ${row.dividendYield >= 5 ? "text-tw-red" : row.dividendYield >= 3 ? "text-amber-400" : ""}`}>
+            {row.dividendYield.toFixed(2)}%
+          </span>
+        ),
     },
   ];
 
