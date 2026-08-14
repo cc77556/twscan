@@ -201,19 +201,234 @@ def fetch_dividends() -> dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# market-data.json（首頁儀表板）
+# ---------------------------------------------------------------------------
+
+YAHOO_HDRS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+CNN_HDRS = {
+    **YAHOO_HDRS,
+    "Accept": "application/json, text/plain, */*",
+    "Origin": "https://www.cnn.com",
+    "Referer": "https://www.cnn.com/markets/fear-and-greed",
+}
+# (name, symbol, flag) — 與舊版 market-data.json 一致
+INDEX_LIST = [
+    ("台灣加權", "^TWII", "🇹🇼"), ("S&P 500", "^GSPC", "🇺🇸"),
+    ("NASDAQ 100", "^NDX", "🇺🇸"), ("道瓊工業", "^DJI", "🇺🇸"),
+    ("費半指數", "^SOX", "🇺🇸"), ("日經 225", "^N225", "🇯🇵"),
+    ("恆生指數", "^HSI", "🇭🇰"), ("USD/TWD", "USDTWD=X", "💱"),
+    ("美元指數", "DX-Y.NYB", "💵"), ("黃金", "GC=F", "🥇"),
+    ("原油 WTI", "CL=F", "🛢️"), ("比特幣", "BTC-USD", "₿"),
+]
+FG_LABELS = {"extreme fear": "極端恐懼", "fear": "恐懼", "neutral": "中性",
+             "greed": "貪婪", "extreme greed": "極端貪婪"}
+
+
+def _get_hdrs(url, hdrs):
+    req = urllib.request.Request(url, headers=hdrs)
+    with urllib.request.urlopen(req, timeout=20, context=CTX) as r:
+        return json.load(r)
+
+
+def _yahoo_quote(symbol, rng="5d"):
+    """Return (price, prev_close, closes[]) from Yahoo chart API."""
+    from urllib.parse import quote
+    d = _get_hdrs(
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{quote(symbol)}?range={rng}&interval=1d",
+        YAHOO_HDRS)
+    res = d["chart"]["result"][0]
+    meta = res["meta"]
+    closes = [c for c in res["indicators"]["quote"][0].get("close", []) if c is not None]
+    return meta["regularMarketPrice"], meta.get("chartPreviousClose"), closes
+
+
+def _rsi14(closes):
+    if len(closes) < 15:
+        return None
+    gains = losses = 0.0
+    # Wilder smoothing 初始化 + 遞推
+    for i in range(1, 15):
+        diff = closes[i] - closes[i - 1]
+        gains += max(diff, 0)
+        losses += max(-diff, 0)
+    ag, al = gains / 14, losses / 14
+    for i in range(15, len(closes)):
+        diff = closes[i] - closes[i - 1]
+        ag = (ag * 13 + max(diff, 0)) / 14
+        al = (al * 13 + max(-diff, 0)) / 14
+    if al == 0:
+        return 100.0
+    return round(100 - 100 / (1 + ag / al), 1)
+
+
+def fetch_market() -> dict:
+    old = json.loads((DATA / "market-data.json").read_text())
+
+    # --- indices（核心，失敗即整檔不更新）---
+    import time
+    indices = []
+    for name, sym, flag in INDEX_LIST:
+        price, prev, _ = _yahoo_quote(sym)
+        chg = round(price - prev, 2) if prev else 0.0
+        pct = round(chg / prev * 100, 2) if prev else 0.0
+        indices.append({"name": name, "symbol": sym, "value": round(price, 2),
+                        "change": chg, "changePercent": pct, "flag": flag})
+        time.sleep(0.4)
+
+    # --- sentiment：CNN F&G（可降級沿用舊值）+ VIX ---
+    try:
+        fg_raw = _get_hdrs(
+            "https://production.dataviz.cnn.io/index/fearandgreed/graphdata", CNN_HDRS)["fear_and_greed"]
+        fear_greed = {
+            "value": round(fg_raw["score"]),
+            "previous": round(fg_raw["previous_close"]),
+            "label": FG_LABELS.get(fg_raw.get("rating", "").lower(), fg_raw.get("rating", "")),
+            "source": "CNN Fear & Greed Index",
+            "sourceUrl": "https://www.cnn.com/markets/fear-and-greed",
+        }
+    except Exception as e:
+        print(f"WARN: CNN F&G unavailable ({e}); keeping previous value", file=sys.stderr)
+        fear_greed = old["sentiment"]["fearGreed"]
+    vix_price, vix_prev, _ = _yahoo_quote("^VIX")
+    vix = {"value": round(vix_price, 2), "previous": round(vix_prev, 2),
+           "change": round(vix_price - vix_prev, 2),
+           "changePercent": round((vix_price - vix_prev) / vix_prev * 100, 2),
+           "source": "Yahoo Finance", "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"}
+
+    # --- thermometer：以 ^GSPC 1 年日線計算 ---
+    spx_price, _, spx_closes = _yahoo_quote("^GSPC", rng="1y")
+    rsi = _rsi14(spx_closes)
+    ma200 = sum(spx_closes[-200:]) / min(len(spx_closes), 200)
+    ma_dist = round((spx_price / ma200 - 1) * 100, 1)
+    hi52 = max(spx_closes)
+    drawdown = round((spx_price / hi52 - 1) * 100, 1)
+    signals = [
+        {"name": "F&G", "value": fear_greed["value"], "threshold": "<25",
+         "triggered": fear_greed["value"] < 25, "desc": "恐懼貪婪指數低於 25"},
+        {"name": "VIX", "value": round(vix_price, 1), "threshold": ">28",
+         "triggered": vix_price > 28, "desc": "波動率指數高於 28"},
+        {"name": "RSI", "value": rsi if rsi is not None else 0, "threshold": "<35",
+         "triggered": bool(rsi is not None and rsi < 35), "desc": "S&P 500 RSI(14) 低於 35"},
+        {"name": "200MA", "value": ma_dist, "unit": "%", "threshold": "<-5%",
+         "triggered": ma_dist < -5, "desc": "距 200 日均線跌幅超過 5%"},
+        {"name": "回撤", "value": drawdown, "unit": "%", "threshold": "<-12%",
+         "triggered": drawdown < -12, "desc": "從 52 週高點回撤超過 12%"},
+    ]
+
+    # --- macro：^TNX/^IRX（×10 報價需除回）+ NY Fed EFFR ---
+    def _yield_of(sym):
+        v, _, _ = _yahoo_quote(sym)
+        return round(v / 10, 2) if v > 20 else round(v, 2)
+    us10y = _yield_of("^TNX")
+    us13w = _yield_of("^IRX")
+    spread = round(us10y - us13w, 2)
+    try:
+        effr_raw = _get_hdrs(
+            "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/1.json", YAHOO_HDRS)
+        fed_rate = float(effr_raw["refRates"][0]["percentRate"])
+    except Exception as e:
+        print(f"WARN: EFFR unavailable ({e}); keeping previous value", file=sys.stderr)
+        fed_rate = old["macro"]["fedRate"]["value"]
+    macro = {
+        "us10y": {"label": "美債 10Y 殖利率", "value": us10y, "unit": "%"},
+        "us13w": {"label": "13W T-bill 殖利率", "value": us13w, "unit": "%"},
+        "yieldSpread": {"label": "10Y−13W 利差", "value": spread, "unit": "%",
+                        "status": "正常" if spread >= 0 else "倒掛"},
+        "fedRate": {"label": "Fed 基準利率", "value": fed_rate, "unit": "%", "note": "EFFR 近似"},
+    }
+
+    # --- institutional：TWSE 三大法人 BFI82U ---
+    bfi = get_json("https://www.twse.com.tw/rwd/zh/fund/BFI82U?response=json")
+    if bfi.get("stat") != "OK":
+        raise RuntimeError(f"BFI82U stat={bfi.get('stat')}")
+    net = {strip_html(str(r[0])): to_num(r[3], 0.0) for r in bfi["data"]}
+    to_yi = lambda v: round(v / 1e8, 2)
+    foreign_net = to_yi((net.get("外資及陸資(不含外資自營商)", 0) or 0) + (net.get("外資自營商", 0) or 0))
+    trust_net = to_yi(net.get("投信", 0) or 0)
+    dealer_net = to_yi((net.get("自營商(自行買賣)", 0) or 0) + (net.get("自營商(避險)", 0) or 0))
+    bfi_date = bfi.get("date", "")
+    inst_date = f"{bfi_date[:4]}-{bfi_date[4:6]}-{bfi_date[6:]}" if len(bfi_date) == 8 else bfi_date
+    institutional = {
+        "date": inst_date,
+        "foreign": {"label": "外資", "value": foreign_net, "unit": "億"},
+        "investment": {"label": "投信", "value": trust_net, "unit": "億"},
+        "dealer": {"label": "自營商", "value": dealer_net, "unit": "億"},
+        "source": "TWSE 證交所",
+        "sourceUrl": "https://www.twse.com.tw/zh/trading/foreign/bfi82u.html",
+    }
+
+    # --- synthesis：規則系統（頁面已有免責聲明）---
+    fg_v = fear_greed["value"]
+    if fg_v <= 25:
+        sent_check = {"label": "情緒", "pass": False, "note": "極端恐懼"}
+    elif fg_v >= 75:
+        sent_check = {"label": "情緒", "pass": False, "note": "極端貪婪"}
+    else:
+        sent_check = {"label": "情緒", "pass": True, "note": fear_greed["label"]}
+    if spread < 0:
+        macro_check = {"label": "總經", "pass": False, "note": "殖利率曲線倒掛"}
+    elif fed_rate >= 3.5:
+        macro_check = {"label": "總經", "pass": None, "note": "高利率環境"}
+    else:
+        macro_check = {"label": "總經", "pass": True, "note": "利率環境中性"}
+    if (rsi is not None and rsi < 35) or ma_dist < -5:
+        tech_check = {"label": "技術", "pass": False, "note": "趨勢偏弱"}
+    elif rsi is not None and rsi > 70:
+        tech_check = {"label": "技術", "pass": None, "note": "短線過熱"}
+    else:
+        tech_check = {"label": "技術", "pass": True, "note": "趨勢健康"}
+    fails = sum(1 for c in (sent_check, macro_check, tech_check) if c["pass"] is False)
+    if fails >= 2:
+        verdict = "保守防禦"
+    elif fails == 1:
+        verdict = "審慎觀望"
+    elif any(c["pass"] is None for c in (sent_check, macro_check, tech_check)):
+        verdict = "中性偏多"
+    else:
+        verdict = "偏多操作"
+    summary = (f"F&G {fg_v}（{fear_greed['label']}），RSI {rsi}，EFFR {fed_rate}%，"
+               f"殖利率曲線{macro['yieldSpread']['status']}。規則綜合判定：{verdict}。")
+
+    last_updated, fetched_at = now_meta()
+    return {
+        "title": "全球市場總覽",
+        "lastUpdated": last_updated,
+        "fetchedAt": fetched_at,
+        "source": "Yahoo Finance / CNN / TWSE",
+        "sentiment": {"fearGreed": fear_greed, "vix": vix},
+        "thermometer": {"signals": signals,
+                        "triggeredCount": sum(1 for s in signals if s["triggered"]),
+                        "total": len(signals), "source": "Yahoo Finance / CNN",
+                        "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC/"},
+        "indices": indices,
+        "indicesSource": "Yahoo Finance",
+        "indicesSourceUrl": "https://finance.yahoo.com/markets/",
+        "macro": macro,
+        "macroSource": "U.S. Treasury / Fed",
+        "macroSourceUrl": "https://finance.yahoo.com/markets/bonds/",
+        "institutional": institutional,
+        "synthesis": {"verdict": verdict,
+                      "checks": {"macro": macro_check, "sentiment": sent_check, "technical": tech_check},
+                      "summary": summary,
+                      "disclaimer": "規則系統分析，僅供參考，不構成投資建議"},
+    }
+
+
 def main():
     jobs = {
         "attention-stocks.json": fetch_attention,
         "disposition-stocks.json": fetch_disposition,
         "dividends.json": fetch_dividends,
+        "market-data.json": fetch_market,
     }
     failed = False
     for fname, fn in jobs.items():
         try:
             data = fn()
-            n = len(data["stocks"])
+            n = len(data.get("stocks", data.get("indices", [])))
             if n == 0 and fname != "disposition-stocks.json":
-                # 注意股/除權息空表極不尋常（處置股可為 0 屬正常），寧可不寫
+                # 注意股/除權息/指數空表極不尋常（處置股可為 0 屬正常），寧可不寫
                 print(f"SKIP {fname}: 0 rows (suspicious, keeping old file)", file=sys.stderr)
                 failed = True
                 continue
