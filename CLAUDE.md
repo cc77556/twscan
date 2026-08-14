@@ -2,7 +2,7 @@
 
 # 台股雷達 TWScan
 
-Next.js 16 + Tailwind 4 + TypeScript, deployed on Vercel (twscan.cc).
+Next.js 16 + Tailwind 4 + TypeScript, deployed on Vercel (twscan.vercel.app).
 Taiwan financial market dashboard — indices, alerts, ETF, dividends, podcast summaries.
 
 ## Data
