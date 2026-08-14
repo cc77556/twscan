@@ -26,4 +26,11 @@ git push origin main >> "$LOG" 2>&1 || {
   echo "=== $(date) push FAILED (offline?) — will retry next run ===" >> "$LOG"
   exit 1
 }
-echo "=== $(date) refreshed + pushed ===" >> "$LOG"
+
+# Vercel 專案沒接 GitHub 整合（8/14 發現：git push 不會觸發部署，最新 deploy 曾停在
+# 142 天前），所以 push 後必須用 CLI 明確部署 production
+npx vercel --prod --yes >> "$LOG" 2>&1 || {
+  echo "=== $(date) vercel deploy FAILED — data committed, site NOT updated ===" >> "$LOG"
+  exit 1
+}
+echo "=== $(date) refreshed + pushed + deployed ===" >> "$LOG"
