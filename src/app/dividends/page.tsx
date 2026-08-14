@@ -10,8 +10,25 @@ export const metadata: Metadata = {
 };
 
 export default function DividendsPage() {
+  // JSON-LD Dataset schema：讓搜尋引擎把這頁當每日更新的資料集收錄
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "台股除權除息日曆",
+    description:
+      "台灣上市公司除權除息預告，含除息日、現金股利、無償配股率與事件殖利率，每日自動更新自台灣證券交易所公開端點。",
+    dateModified: dividends.lastUpdated,
+    creator: { "@type": "Organization", name: "台股雷達 TWScan" },
+    license: "https://www.twse.com.tw/",
+    isBasedOn: "https://www.twse.com.tw/zh/exRight/TWT48U",
+    keywords: ["除權息", "除息日", "現金股利", "殖利率", "台股"],
+  };
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Disclaimer />
       <div className="mb-6">
         <h1 className="text-2xl font-bold md:text-3xl">除權息日曆</h1>
