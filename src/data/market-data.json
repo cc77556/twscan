@@ -1,21 +1,21 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-08-14",
-  "fetchedAt": "2026-08-14T21:46:35+08:00",
+  "lastUpdated": "2026-08-15",
+  "fetchedAt": "2026-08-15T09:09:31+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
-      "value": 66,
+      "value": 65,
       "previous": 66,
       "label": "貪婪",
       "source": "CNN Fear & Greed Index",
       "sourceUrl": "https://www.cnn.com/markets/fear-and-greed"
     },
     "vix": {
-      "value": 14.5,
+      "value": 14.25,
       "previous": 15.46,
-      "change": -0.96,
-      "changePercent": -6.21,
+      "change": -1.21,
+      "changePercent": -7.83,
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"
     }
@@ -24,28 +24,28 @@
     "signals": [
       {
         "name": "F&G",
-        "value": 66,
+        "value": 65,
         "threshold": "<25",
         "triggered": false,
         "desc": "恐懼貪婪指數低於 25"
       },
       {
         "name": "VIX",
-        "value": 14.5,
+        "value": 14.2,
         "threshold": ">28",
         "triggered": false,
         "desc": "波動率指數高於 28"
       },
       {
         "name": "RSI",
-        "value": 67.6,
+        "value": 65.9,
         "threshold": "<35",
         "triggered": false,
         "desc": "S&P 500 RSI(14) 低於 35"
       },
       {
         "name": "200MA",
-        "value": 10.3,
+        "value": 10.0,
         "unit": "%",
         "threshold": "<-5%",
         "triggered": false,
@@ -53,7 +53,7 @@
       },
       {
         "name": "回撤",
-        "value": -0.0,
+        "value": -0.2,
         "unit": "%",
         "threshold": "<-12%",
         "triggered": false,
@@ -77,33 +77,33 @@
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": 7805.0,
-      "change": 47.36,
-      "changePercent": 0.61,
+      "value": 7785.76,
+      "change": 28.12,
+      "changePercent": 0.36,
       "flag": "🇺🇸"
     },
     {
       "name": "NASDAQ 100",
       "symbol": "^NDX",
-      "value": 30161.07,
-      "change": 438.77,
-      "changePercent": 1.48,
+      "value": 30046.14,
+      "change": 323.84,
+      "changePercent": 1.09,
       "flag": "🇺🇸"
     },
     {
       "name": "道瓊工業",
       "symbol": "^DJI",
-      "value": 53845.09,
-      "change": -191.84,
-      "changePercent": -0.36,
+      "value": 53732.41,
+      "change": -304.52,
+      "changePercent": -0.56,
       "flag": "🇺🇸"
     },
     {
       "name": "費半指數",
       "symbol": "^SOX",
-      "value": 12469.33,
-      "change": 112.54,
-      "changePercent": 0.91,
+      "value": 12417.05,
+      "change": 60.26,
+      "changePercent": 0.49,
       "flag": "🇺🇸"
     },
     {
@@ -125,41 +125,41 @@
     {
       "name": "USD/TWD",
       "symbol": "USDTWD=X",
-      "value": 31.94,
-      "change": -0.3,
-      "changePercent": -0.93,
+      "value": 32.0,
+      "change": -0.23,
+      "changePercent": -0.71,
       "flag": "💱"
     },
     {
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
-      "value": 99.56,
-      "change": -0.25,
-      "changePercent": -0.25,
+      "value": 99.64,
+      "change": -0.17,
+      "changePercent": -0.17,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
-      "value": 4449.8,
-      "change": 88.0,
-      "changePercent": 2.02,
+      "value": 4432.0,
+      "change": 70.2,
+      "changePercent": 1.61,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": 80.9,
-      "change": -1.23,
-      "changePercent": -1.5,
+      "value": 82.4,
+      "change": 0.27,
+      "changePercent": 0.33,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 62653.11,
-      "change": -1257.48,
-      "changePercent": -1.97,
+      "value": 62945.0,
+      "change": -606.88,
+      "changePercent": -0.95,
       "flag": "₿"
     }
   ],
@@ -168,7 +168,7 @@
   "macro": {
     "us10y": {
       "label": "美債 10Y 殖利率",
-      "value": 4.66,
+      "value": 4.7,
       "unit": "%"
     },
     "us13w": {
@@ -178,7 +178,7 @@
     },
     "yieldSpread": {
       "label": "10Y−13W 利差",
-      "value": 0.96,
+      "value": 1.0,
       "unit": "%",
       "status": "正常"
     },
@@ -230,7 +230,7 @@
         "note": "趨勢健康"
       }
     },
-    "summary": "F&G 66（貪婪），RSI 67.6，EFFR 3.63%，殖利率曲線正常。規則綜合判定：中性偏多。",
+    "summary": "F&G 65（貪婪），RSI 65.9，EFFR 3.63%，殖利率曲線正常。規則綜合判定：中性偏多。",
     "disclaimer": "規則系統分析，僅供參考，不構成投資建議"
   }
 }
