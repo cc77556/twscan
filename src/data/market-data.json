@@ -1,7 +1,7 @@
 {
   "title": "全球市場總覽",
   "lastUpdated": "2026-08-15",
-  "fetchedAt": "2026-08-15T09:09:31+08:00",
+  "fetchedAt": "2026-08-15T17:30:10+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
@@ -141,9 +141,9 @@
     {
       "name": "黃金",
       "symbol": "GC=F",
-      "value": 4432.0,
-      "change": 70.2,
-      "changePercent": 1.61,
+      "value": 4437.3,
+      "change": 75.5,
+      "changePercent": 1.73,
       "flag": "🥇"
     },
     {
@@ -157,9 +157,9 @@
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 62945.0,
-      "change": -606.88,
-      "changePercent": -0.95,
+      "value": 62909.7,
+      "change": -642.18,
+      "changePercent": -1.01,
       "flag": "₿"
     }
   ],
