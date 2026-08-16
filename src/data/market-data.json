@@ -1,7 +1,7 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-08-15",
-  "fetchedAt": "2026-08-15T17:30:10+08:00",
+  "lastUpdated": "2026-08-16",
+  "fetchedAt": "2026-08-16T17:30:14+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
@@ -134,32 +134,32 @@
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
       "value": 99.64,
-      "change": -0.17,
-      "changePercent": -0.17,
+      "change": -0.18,
+      "changePercent": -0.18,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
       "value": 4437.3,
-      "change": 75.5,
-      "changePercent": 1.73,
+      "change": 54.3,
+      "changePercent": 1.24,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
       "value": 82.4,
-      "change": 0.27,
-      "changePercent": 0.33,
+      "change": -0.8,
+      "changePercent": -0.96,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 62909.7,
-      "change": -642.18,
-      "changePercent": -1.01,
+      "value": 62993.11,
+      "change": -409.32,
+      "changePercent": -0.65,
       "flag": "₿"
     }
   ],
