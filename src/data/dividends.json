@@ -1,68 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-08-16",
-  "fetchedAt": "2026-08-16T17:30:05+08:00",
+  "lastUpdated": "2026-08-17",
+  "fetchedAt": "2026-08-17T17:30:06+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "2476",
-      "name": "鉅祥",
-      "exDate": "2026-08-13",
-      "cashDividend": 2.973128,
-      "stockDividend": 0.0,
-      "dividendYield": 2.48
-    },
-    {
-      "code": "2880",
-      "name": "華南金",
-      "exDate": "2026-08-13",
-      "cashDividend": 1.35,
-      "stockDividend": 0.00999999,
-      "dividendYield": 3.47
-    },
-    {
-      "code": "2886",
-      "name": "兆豐金",
-      "exDate": "2026-08-13",
-      "cashDividend": 1.75,
-      "stockDividend": 0.0,
-      "dividendYield": 3.7
-    },
-    {
-      "code": "3008",
-      "name": "大立光",
-      "exDate": "2026-08-13",
-      "cashDividend": 41.5,
-      "stockDividend": 0.0,
-      "dividendYield": 0.9
-    },
-    {
-      "code": "3050",
-      "name": "鈺德",
-      "exDate": "2026-08-13",
-      "cashDividend": 0.25,
-      "stockDividend": 0.0,
-      "dividendYield": 2.18
-    },
-    {
-      "code": "6117",
-      "name": "迎廣",
-      "exDate": "2026-08-13",
-      "cashDividend": 1.999441,
-      "stockDividend": 0.0,
-      "dividendYield": 3.15
-    },
-    {
-      "code": "6202",
-      "name": "盛群",
-      "exDate": "2026-08-13",
-      "cashDividend": 0.68,
-      "stockDividend": 0.0,
-      "dividendYield": 1.13
-    },
     {
       "code": "00401A",
       "name": "主動摩根台灣鑫收",
@@ -395,17 +339,17 @@
       "code": "00731",
       "name": "復華富時高息低波",
       "exDate": "2026-08-19",
-      "cashDividend": 0.0,
+      "cashDividend": 1.458,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.59
     },
     {
       "code": "00929",
       "name": "復華台灣科技優息",
       "exDate": "2026-08-19",
-      "cashDividend": 0.0,
+      "cashDividend": 0.38,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.29
     },
     {
       "code": "1537",
@@ -952,6 +896,14 @@
       "dividendYield": 3.93
     },
     {
+      "code": "2101",
+      "name": "南港",
+      "exDate": "2026-08-28",
+      "cashDividend": 0.6,
+      "stockDividend": 0.0,
+      "dividendYield": 1.9
+    },
+    {
       "code": "2250",
       "name": "IKKA-KY",
       "exDate": "2026-08-28",
@@ -1016,6 +968,14 @@
       "dividendYield": 7.72
     },
     {
+      "code": "1795",
+      "name": "美時",
+      "exDate": "2026-08-31",
+      "cashDividend": 2.565316,
+      "stockDividend": 0.01300671,
+      "dividendYield": 1.42
+    },
+    {
       "code": "2905",
       "name": "三商",
       "exDate": "2026-08-31",
@@ -1032,11 +992,27 @@
       "dividendYield": 3.79
     },
     {
+      "code": "9105",
+      "name": "泰金寶-DR",
+      "exDate": "2026-08-31",
+      "cashDividend": 0.067011,
+      "stockDividend": 0.0,
+      "dividendYield": 0.78
+    },
+    {
       "code": "9917",
       "name": "中保科",
       "exDate": "2026-08-31",
       "cashDividend": 0.0,
       "stockDividend": 0.05,
+      "dividendYield": null
+    },
+    {
+      "code": "00939",
+      "name": "統一台灣高息動能",
+      "exDate": "2026-09-01",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
       "dividendYield": null
     },
     {
@@ -1046,6 +1022,14 @@
       "cashDividend": 0.6,
       "stockDividend": 0.0,
       "dividendYield": 2.28
+    },
+    {
+      "code": "1783",
+      "name": "和康生",
+      "exDate": "2026-09-01",
+      "cashDividend": 1.999598,
+      "stockDividend": 0.0,
+      "dividendYield": 4.96
     },
     {
       "code": "2701",
@@ -1064,12 +1048,68 @@
       "dividendYield": 5.33
     },
     {
+      "code": "3135",
+      "name": "凌航",
+      "exDate": "2026-09-01",
+      "cashDividend": 3.258584,
+      "stockDividend": 0.04768659,
+      "dividendYield": 1.99
+    },
+    {
+      "code": "3416",
+      "name": "融程電",
+      "exDate": "2026-09-01",
+      "cashDividend": 0.0,
+      "stockDividend": 0.04976171,
+      "dividendYield": null
+    },
+    {
+      "code": "4977",
+      "name": "眾達-KY",
+      "exDate": "2026-09-01",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
+      "code": "9941",
+      "name": "裕融",
+      "exDate": "2026-09-01",
+      "cashDividend": 4.38,
+      "stockDividend": 0.02,
+      "dividendYield": 5.19
+    },
+    {
+      "code": "9941A",
+      "name": "裕融甲特",
+      "exDate": "2026-09-01",
+      "cashDividend": 2.339375,
+      "stockDividend": 0.0,
+      "dividendYield": 4.59
+    },
+    {
+      "code": "6426",
+      "name": "統新",
+      "exDate": "2026-09-02",
+      "cashDividend": 0.5,
+      "stockDividend": 0.0,
+      "dividendYield": 0.23
+    },
+    {
       "code": "1203",
       "name": "味王",
       "exDate": "2026-09-03",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
       "dividendYield": 2.25
+    },
+    {
+      "code": "7780",
+      "name": "大研生醫*",
+      "exDate": "2026-09-03",
+      "cashDividend": 0.116588,
+      "stockDividend": 0.0,
+      "dividendYield": 0.7
     },
     {
       "code": "6533",

@@ -1,10 +1,20 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-08-16",
+  "lastUpdated": "2026-08-17",
   "source": "TWSE",
-  "fetchedAt": "2026-08-16T17:30:05+08:00",
+  "fetchedAt": "2026-08-17T17:30:05+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "6225",
+      "name": "天瀚",
+      "publishDate": "2026-08-14",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/08/17～115/08/21",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
     {
       "code": "6213",
       "name": "聯茂",
