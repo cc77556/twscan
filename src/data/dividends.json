@@ -1,116 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-08-23",
-  "fetchedAt": "2026-08-23T17:30:05+08:00",
+  "lastUpdated": "2026-08-24",
+  "fetchedAt": "2026-08-24T17:30:04+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "1597",
-      "name": "直得",
-      "exDate": "2026-08-20",
-      "cashDividend": 0.7,
-      "stockDividend": 0.0,
-      "dividendYield": 0.53
-    },
-    {
-      "code": "1714",
-      "name": "和桐",
-      "exDate": "2026-08-20",
-      "cashDividend": 0.18,
-      "stockDividend": 0.0,
-      "dividendYield": 1.06
-    },
-    {
-      "code": "2377",
-      "name": "微星",
-      "exDate": "2026-08-20",
-      "cashDividend": 4.2,
-      "stockDividend": 0.0,
-      "dividendYield": 2.97
-    },
-    {
-      "code": "2472",
-      "name": "立隆電",
-      "exDate": "2026-08-20",
-      "cashDividend": 3.5,
-      "stockDividend": 0.0,
-      "dividendYield": 1.61
-    },
-    {
-      "code": "2505",
-      "name": "國揚",
-      "exDate": "2026-08-20",
-      "cashDividend": 1.0,
-      "stockDividend": 0.0,
-      "dividendYield": 5.71
-    },
-    {
-      "code": "2539",
-      "name": "櫻花建",
-      "exDate": "2026-08-20",
-      "cashDividend": 0.6,
-      "stockDividend": 0.22,
-      "dividendYield": 1.66
-    },
-    {
-      "code": "4441",
-      "name": "振大環球",
-      "exDate": "2026-08-20",
-      "cashDividend": 10.8,
-      "stockDividend": 0.0,
-      "dividendYield": 5.93
-    },
-    {
-      "code": "4764",
-      "name": "雙鍵",
-      "exDate": "2026-08-20",
-      "cashDividend": 0.0,
-      "stockDividend": 0.0,
-      "dividendYield": null
-    },
-    {
-      "code": "5222",
-      "name": "全訊",
-      "exDate": "2026-08-20",
-      "cashDividend": 0.0,
-      "stockDividend": 0.09996664,
-      "dividendYield": null
-    },
-    {
-      "code": "6177",
-      "name": "達麗",
-      "exDate": "2026-08-20",
-      "cashDividend": 3.0,
-      "stockDividend": 0.0,
-      "dividendYield": 6.32
-    },
-    {
-      "code": "6666",
-      "name": "羅麗芬-KY",
-      "exDate": "2026-08-20",
-      "cashDividend": 2.0,
-      "stockDividend": 0.0,
-      "dividendYield": 4.51
-    },
-    {
-      "code": "6691",
-      "name": "洋基工程",
-      "exDate": "2026-08-20",
-      "cashDividend": 21.0,
-      "stockDividend": 0.1,
-      "dividendYield": 3.54
-    },
-    {
-      "code": "6805",
-      "name": "富世達",
-      "exDate": "2026-08-20",
-      "cashDividend": 12.5,
-      "stockDividend": 0.0,
-      "dividendYield": 0.71
-    },
     {
       "code": "00771",
       "name": "元大US高息特別股",
@@ -896,12 +792,60 @@
       "dividendYield": null
     },
     {
+      "code": "00940",
+      "name": "元大台灣價值高息",
+      "exDate": "2026-09-08",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
+      "code": "2442",
+      "name": "新美齊",
+      "exDate": "2026-09-08",
+      "cashDividend": 2.031861,
+      "stockDividend": 0.07111516,
+      "dividendYield": 10.21
+    },
+    {
       "code": "2706",
       "name": "第一店",
       "exDate": "2026-09-08",
       "cashDividend": 0.35,
       "stockDividend": 0.0,
       "dividendYield": 2.79
+    },
+    {
+      "code": "3622",
+      "name": "洋華",
+      "exDate": "2026-09-08",
+      "cashDividend": 3.2,
+      "stockDividend": 0.0,
+      "dividendYield": 6.43
+    },
+    {
+      "code": "8473",
+      "name": "山林水",
+      "exDate": "2026-09-08",
+      "cashDividend": 0.782345,
+      "stockDividend": 0.10592943,
+      "dividendYield": 1.69
+    },
+    {
+      "code": "9933",
+      "name": "中鼎",
+      "exDate": "2026-09-08",
+      "cashDividend": 0.763056,
+      "stockDividend": 0.0190764,
+      "dividendYield": 1.81
+    },
+    {
+      "code": "3706",
+      "name": "神達",
+      "exDate": "2026-09-09",
+      "cashDividend": 3.0,
+      "stockDividend": 0.1,
+      "dividendYield": 3.33
     },
     {
       "code": "6133",
@@ -982,6 +926,14 @@
       "cashDividend": 1.0,
       "stockDividend": 0.0,
       "dividendYield": 3.85
+    },
+    {
+      "code": "6947",
+      "name": "台鎔科技",
+      "exDate": "2026-10-07",
+      "cashDividend": 0.533326,
+      "stockDividend": 0.0,
+      "dividendYield": 0.76
     }
   ]
 }
