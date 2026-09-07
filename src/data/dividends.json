@@ -1,44 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-09-06",
-  "fetchedAt": "2026-09-06T17:30:03+08:00",
+  "lastUpdated": "2026-09-07",
+  "fetchedAt": "2026-09-07T17:30:08+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "1203",
-      "name": "味王",
-      "exDate": "2026-09-03",
-      "cashDividend": 1.0,
-      "stockDividend": 0.0,
-      "dividendYield": 2.24
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
-      "exDate": "2026-09-03",
-      "cashDividend": 32.551656,
-      "stockDividend": 0.0,
-      "dividendYield": 0.77
-    },
-    {
-      "code": "7780",
-      "name": "大研生醫*",
-      "exDate": "2026-09-03",
-      "cashDividend": 0.116588,
-      "stockDividend": 0.0,
-      "dividendYield": 0.7
-    },
-    {
-      "code": "8466",
-      "name": "美吉吉-KY",
-      "exDate": "2026-09-03",
-      "cashDividend": 0.301938,
-      "stockDividend": 0.0,
-      "dividendYield": 2.0
-    },
     {
       "code": "00400A",
       "name": "主動國泰動能高息",
@@ -614,6 +582,14 @@
       "cashDividend": 4.0,
       "stockDividend": 0.0,
       "dividendYield": 8.24
+    },
+    {
+      "code": "5258",
+      "name": "虹堡",
+      "exDate": "2026-09-23",
+      "cashDividend": 1.007326,
+      "stockDividend": 0.0,
+      "dividendYield": 2.2
     },
     {
       "code": "2109",
