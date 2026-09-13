@@ -1,7 +1,7 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-09-12",
-  "fetchedAt": "2026-09-12T17:30:11+08:00",
+  "lastUpdated": "2026-09-13",
+  "fetchedAt": "2026-09-13T17:30:11+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
@@ -157,9 +157,9 @@
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 77330.33,
-      "change": -1108.25,
-      "changePercent": -1.41,
+      "value": 76616.99,
+      "change": -1642.53,
+      "changePercent": -2.1,
       "flag": "₿"
     }
   ],
