@@ -1,10 +1,20 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-09-14",
+  "lastUpdated": "2026-09-15",
   "source": "TWSE",
-  "fetchedAt": "2026-09-14T17:30:05+08:00",
+  "fetchedAt": "2026-09-15T17:30:05+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "8996",
+      "name": "高力",
+      "publishDate": "2026-09-14",
+      "count": 1,
+      "condition": "最近十個營業日已有六次",
+      "period": "115/09/15～115/09/21",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，最近十個營業日內已有六個營業日達本公司「公布注意交易資訊」標準。"
+    },
     {
       "code": "3055",
       "name": "蔚華科",
