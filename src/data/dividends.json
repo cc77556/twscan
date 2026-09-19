@@ -1,7 +1,7 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-09-18",
-  "fetchedAt": "2026-09-18T17:30:08+08:00",
+  "lastUpdated": "2026-09-19",
+  "fetchedAt": "2026-09-19T17:30:01+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
@@ -29,7 +29,7 @@
       "exDate": "2026-09-17",
       "cashDividend": 0.2,
       "stockDividend": 0.0,
-      "dividendYield": 2.49
+      "dividendYield": 2.51
     },
     {
       "code": "00929",
@@ -37,7 +37,7 @@
       "exDate": "2026-09-17",
       "cashDividend": 0.38,
       "stockDividend": 0.0,
-      "dividendYield": 1.33
+      "dividendYield": 1.31
     },
     {
       "code": "5306",
@@ -45,7 +45,7 @@
       "exDate": "2026-09-17",
       "cashDividend": 1.074628,
       "stockDividend": 0.0,
-      "dividendYield": 1.2
+      "dividendYield": 1.22
     },
     {
       "code": "00728",
@@ -53,7 +53,7 @@
       "exDate": "2026-09-18",
       "cashDividend": 0.77,
       "stockDividend": 0.0,
-      "dividendYield": 1.12
+      "dividendYield": 1.11
     },
     {
       "code": "00918",
@@ -61,7 +61,7 @@
       "exDate": "2026-09-18",
       "cashDividend": 1.75,
       "stockDividend": 0.0,
-      "dividendYield": 4.83
+      "dividendYield": 5.12
     },
     {
       "code": "00994A",
@@ -69,7 +69,7 @@
       "exDate": "2026-09-18",
       "cashDividend": 0.257,
       "stockDividend": 0.0,
-      "dividendYield": 1.57
+      "dividendYield": 1.55
     },
     {
       "code": "00713",
@@ -93,7 +93,7 @@
       "exDate": "2026-09-23",
       "cashDividend": 2.4,
       "stockDividend": 0.0,
-      "dividendYield": 7.77
+      "dividendYield": 7.64
     },
     {
       "code": "1808",
@@ -101,7 +101,7 @@
       "exDate": "2026-09-23",
       "cashDividend": 1.5,
       "stockDividend": 0.0,
-      "dividendYield": 4.39
+      "dividendYield": 4.18
     },
     {
       "code": "2542",
@@ -109,7 +109,7 @@
       "exDate": "2026-09-23",
       "cashDividend": 4.0,
       "stockDividend": 0.0,
-      "dividendYield": 8.54
+      "dividendYield": 8.37
     },
     {
       "code": "5258",
@@ -117,7 +117,7 @@
       "exDate": "2026-09-23",
       "cashDividend": 1.007326,
       "stockDividend": 0.0,
-      "dividendYield": 2.36
+      "dividendYield": 2.38
     },
     {
       "code": "1235",
@@ -125,7 +125,7 @@
       "exDate": "2026-09-24",
       "cashDividend": 0.5,
       "stockDividend": 0.04999999,
-      "dividendYield": 1.33
+      "dividendYield": 1.28
     },
     {
       "code": "2109",
@@ -133,7 +133,7 @@
       "exDate": "2026-09-29",
       "cashDividend": 0.5,
       "stockDividend": 0.0,
-      "dividendYield": 3.38
+      "dividendYield": 3.4
     },
     {
       "code": "7631",
@@ -141,7 +141,7 @@
       "exDate": "2026-09-29",
       "cashDividend": 0.8,
       "stockDividend": 0.0,
-      "dividendYield": 0.59
+      "dividendYield": 0.58
     },
     {
       "code": "01004T",
@@ -149,7 +149,7 @@
       "exDate": "2026-09-30",
       "cashDividend": 0.221074,
       "stockDividend": 0.0,
-      "dividendYield": 2.2
+      "dividendYield": 2.19
     },
     {
       "code": "2323",
@@ -157,7 +157,7 @@
       "exDate": "2026-10-01",
       "cashDividend": 0.2,
       "stockDividend": 0.0,
-      "dividendYield": 1.86
+      "dividendYield": 1.87
     },
     {
       "code": "9927",
@@ -165,7 +165,7 @@
       "exDate": "2026-10-01",
       "cashDividend": 5.0,
       "stockDividend": 0.0,
-      "dividendYield": 7.16
+      "dividendYield": 7.14
     },
     {
       "code": "6834",
@@ -205,7 +205,7 @@
       "exDate": "2026-10-06",
       "cashDividend": 0.4,
       "stockDividend": 0.08,
-      "dividendYield": 2.21
+      "dividendYield": 2.22
     },
     {
       "code": "8021",
@@ -261,7 +261,7 @@
       "exDate": "2026-10-07",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 4.12
+      "dividendYield": 4.15
     },
     {
       "code": "6947",
@@ -285,7 +285,7 @@
       "exDate": "2026-10-28",
       "cashDividend": 0.6,
       "stockDividend": 0.0,
-      "dividendYield": 3.7
+      "dividendYield": 3.76
     }
   ]
 }
