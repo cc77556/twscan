@@ -1,7 +1,7 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-09-19",
-  "fetchedAt": "2026-09-19T17:30:09+08:00",
+  "lastUpdated": "2026-09-20",
+  "fetchedAt": "2026-09-20T17:30:08+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
@@ -69,9 +69,9 @@
     {
       "name": "台灣加權",
       "symbol": "^TWII",
-      "value": 47180.75,
-      "change": 1318.23,
-      "changePercent": 2.87,
+      "value": 47368.04,
+      "change": 1505.52,
+      "changePercent": 3.28,
       "flag": "🇹🇼"
     },
     {
@@ -134,32 +134,32 @@
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
       "value": 100.22,
-      "change": 0.76,
-      "changePercent": 0.76,
+      "change": 0.56,
+      "changePercent": 0.56,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
       "value": 4424.9,
-      "change": 73.0,
-      "changePercent": 1.68,
+      "change": 92.1,
+      "changePercent": 2.13,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
       "value": 96.08,
-      "change": -5.31,
-      "changePercent": -5.24,
+      "change": -9.75,
+      "changePercent": -9.21,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 81389.15,
-      "change": 5776.64,
-      "changePercent": 7.64,
+      "value": 80345.7,
+      "change": 4195.38,
+      "changePercent": 5.51,
       "flag": "₿"
     }
   ],

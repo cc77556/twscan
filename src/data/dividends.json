@@ -1,7 +1,7 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-09-19",
-  "fetchedAt": "2026-09-19T17:30:01+08:00",
+  "lastUpdated": "2026-09-20",
+  "fetchedAt": "2026-09-20T17:30:00+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
