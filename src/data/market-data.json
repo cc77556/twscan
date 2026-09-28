@@ -1,21 +1,21 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-09-27",
-  "fetchedAt": "2026-09-27T17:30:11+08:00",
+  "lastUpdated": "2026-09-28",
+  "fetchedAt": "2026-09-28T17:30:13+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
       "value": 37,
-      "previous": 36,
+      "previous": 37,
       "label": "恐懼",
       "source": "CNN Fear & Greed Index",
       "sourceUrl": "https://www.cnn.com/markets/fear-and-greed"
     },
     "vix": {
-      "value": 14.87,
-      "previous": 14.87,
-      "change": 0.0,
-      "changePercent": 0.0,
+      "value": 16.38,
+      "previous": 14.21,
+      "change": 2.17,
+      "changePercent": 15.27,
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"
     }
@@ -31,7 +31,7 @@
       },
       {
         "name": "VIX",
-        "value": 14.9,
+        "value": 16.4,
         "threshold": ">28",
         "triggered": false,
         "desc": "波動率指數高於 28"
@@ -109,57 +109,57 @@
     {
       "name": "日經 225",
       "symbol": "^N225",
-      "value": 66364.2,
-      "change": 2441.2,
-      "changePercent": 3.82,
+      "value": 65877.62,
+      "change": 1741.37,
+      "changePercent": 2.72,
       "flag": "🇯🇵"
     },
     {
       "name": "恆生指數",
       "symbol": "^HSI",
-      "value": 24510.09,
-      "change": -240.69,
-      "changePercent": -0.97,
+      "value": 24642.51,
+      "change": -400.2,
+      "changePercent": -1.6,
       "flag": "🇭🇰"
     },
     {
       "name": "USD/TWD",
       "symbol": "USDTWD=X",
-      "value": 31.7,
-      "change": -0.11,
-      "changePercent": -0.35,
+      "value": 31.79,
+      "change": 0.05,
+      "changePercent": 0.16,
       "flag": "💱"
     },
     {
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
-      "value": 101.03,
-      "change": 0.44,
-      "changePercent": 0.44,
+      "value": 101.09,
+      "change": -0.01,
+      "changePercent": -0.01,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
-      "value": 4321.2,
-      "change": -55.2,
-      "changePercent": -1.26,
+      "value": 4177.9,
+      "change": -140.5,
+      "changePercent": -3.25,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": 92.41,
-      "change": -2.18,
-      "changePercent": -2.3,
+      "value": 95.45,
+      "change": 3.29,
+      "changePercent": 3.57,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 84687.75,
-      "change": 304.74,
-      "changePercent": 0.36,
+      "value": 82783.54,
+      "change": -1595.52,
+      "changePercent": -1.89,
       "flag": "₿"
     }
   ],
