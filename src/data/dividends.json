@@ -1,27 +1,19 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-10-01",
-  "fetchedAt": "2026-10-01T17:30:04+08:00",
+  "lastUpdated": "2026-10-02",
+  "fetchedAt": "2026-10-02T17:30:06+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
     {
-      "code": "6834",
-      "name": "天二科技",
-      "exDate": "2026-10-02",
-      "cashDividend": 0.0,
-      "stockDividend": 0.0,
-      "dividendYield": null
-    },
-    {
       "code": "00406A",
       "name": "主動中信台灣收益",
       "exDate": "2026-10-05",
       "cashDividend": 0.138,
       "stockDividend": 0.0,
-      "dividendYield": 1.39
+      "dividendYield": 1.38
     },
     {
       "code": "00939",
@@ -101,7 +93,7 @@
       "exDate": "2026-10-07",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 3.99
+      "dividendYield": 4.0
     },
     {
       "code": "6947",
@@ -424,16 +416,32 @@
       "dividendYield": null
     },
     {
+      "code": "00991B",
+      "name": "貝萊德A級公司債",
+      "exDate": "2026-10-20",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
       "code": "4155",
       "name": "訊映",
       "exDate": "2026-10-20",
       "cashDividend": 0.3,
       "stockDividend": 0.0,
-      "dividendYield": 2.05
+      "dividendYield": 2.02
     },
     {
       "code": "00408A",
       "name": "主動第一金優股息",
+      "exDate": "2026-10-21",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
+      "code": "00929",
+      "name": "復華台灣科技優息",
       "exDate": "2026-10-21",
       "cashDividend": 0.0,
       "stockDividend": 0.0,
@@ -461,7 +469,7 @@
       "exDate": "2026-10-28",
       "cashDividend": 0.6,
       "stockDividend": 0.0,
-      "dividendYield": 3.8
+      "dividendYield": 3.83
     }
   ]
 }
