@@ -1,9 +1,9 @@
 {
   "title": "注意股票",
-  "lastUpdated": "2026-10-03",
+  "lastUpdated": "2026-10-04",
   "dateRange": "2026-09-29 ~ 2026-10-02",
   "source": "TWSE",
-  "fetchedAt": "2026-10-03T17:30:01+08:00",
+  "fetchedAt": "2026-10-04T17:30:02+08:00",
   "isSampleData": false,
   "stocks": [
     {
