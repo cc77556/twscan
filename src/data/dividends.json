@@ -1,7 +1,7 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-10-06",
-  "fetchedAt": "2026-10-06T17:30:07+08:00",
+  "lastUpdated": "2026-10-07",
+  "fetchedAt": "2026-10-07T17:30:09+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
@@ -37,7 +37,7 @@
       "exDate": "2026-10-05",
       "cashDividend": 0.085,
       "stockDividend": 0.0,
-      "dividendYield": 0.88
+      "dividendYield": 0.89
     },
     {
       "code": "2614",
@@ -45,7 +45,7 @@
       "exDate": "2026-10-06",
       "cashDividend": 0.4,
       "stockDividend": 0.08,
-      "dividendYield": 2.09
+      "dividendYield": 2.51
     },
     {
       "code": "8021",
@@ -101,7 +101,7 @@
       "exDate": "2026-10-07",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 3.9
+      "dividendYield": 3.94
     },
     {
       "code": "6947",
@@ -117,7 +117,7 @@
       "exDate": "2026-10-08",
       "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": 0.73
+      "dividendYield": 0.72
     },
     {
       "code": "1449",
@@ -149,7 +149,7 @@
       "exDate": "2026-10-15",
       "cashDividend": 0.1273,
       "stockDividend": 0.0,
-      "dividendYield": 0.73
+      "dividendYield": 0.72
     },
     {
       "code": "00851",
@@ -445,7 +445,7 @@
       "exDate": "2026-10-20",
       "cashDividend": 0.3,
       "stockDividend": 0.0,
-      "dividendYield": 2.03
+      "dividendYield": 2.11
     },
     {
       "code": "00408A",
@@ -493,7 +493,7 @@
       "exDate": "2026-10-28",
       "cashDividend": 0.6,
       "stockDividend": 0.0,
-      "dividendYield": 3.85
+      "dividendYield": 3.87
     },
     {
       "code": "5522",
@@ -501,7 +501,7 @@
       "exDate": "2026-10-29",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 1.66
+      "dividendYield": 1.67
     }
   ]
 }
