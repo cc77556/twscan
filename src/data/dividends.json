@@ -1,51 +1,19 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-10-07",
-  "fetchedAt": "2026-10-07T17:30:09+08:00",
+  "lastUpdated": "2026-10-08",
+  "fetchedAt": "2026-10-08T17:30:04+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
     {
-      "code": "6834",
-      "name": "天二科技",
-      "exDate": "2026-10-02",
-      "cashDividend": 0.0,
-      "stockDividend": 0.0,
-      "dividendYield": null
-    },
-    {
-      "code": "00406A",
-      "name": "主動中信台灣收益",
-      "exDate": "2026-10-05",
-      "cashDividend": 0.138,
-      "stockDividend": 0.0,
-      "dividendYield": 1.34
-    },
-    {
-      "code": "00939",
-      "name": "統一台灣高息動能",
-      "exDate": "2026-10-05",
-      "cashDividend": 0.125,
-      "stockDividend": 0.0,
-      "dividendYield": 0.52
-    },
-    {
-      "code": "00984D",
-      "name": "主動聯博全球非投",
-      "exDate": "2026-10-05",
-      "cashDividend": 0.085,
-      "stockDividend": 0.0,
-      "dividendYield": 0.89
-    },
-    {
       "code": "2614",
       "name": "東森",
       "exDate": "2026-10-06",
       "cashDividend": 0.4,
       "stockDividend": 0.08,
-      "dividendYield": 2.51
+      "dividendYield": 2.59
     },
     {
       "code": "8021",
@@ -69,7 +37,7 @@
       "exDate": "2026-10-07",
       "cashDividend": 0.058,
       "stockDividend": 0.0,
-      "dividendYield": 0.37
+      "dividendYield": 0.38
     },
     {
       "code": "00953B",
@@ -101,7 +69,7 @@
       "exDate": "2026-10-07",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 3.94
+      "dividendYield": 3.85
     },
     {
       "code": "6947",
@@ -117,7 +85,7 @@
       "exDate": "2026-10-08",
       "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": 0.72
+      "dividendYield": 0.73
     },
     {
       "code": "1449",
@@ -440,14 +408,6 @@
       "dividendYield": null
     },
     {
-      "code": "4155",
-      "name": "訊映",
-      "exDate": "2026-10-20",
-      "cashDividend": 0.3,
-      "stockDividend": 0.0,
-      "dividendYield": 2.11
-    },
-    {
       "code": "00408A",
       "name": "主動第一金優股息",
       "exDate": "2026-10-21",
@@ -472,12 +432,20 @@
       "dividendYield": null
     },
     {
+      "code": "2028",
+      "name": "威致",
+      "exDate": "2026-10-23",
+      "cashDividend": 0.2,
+      "stockDividend": 0.0,
+      "dividendYield": 1.18
+    },
+    {
       "code": "6931",
       "name": "青松健康",
       "exDate": "2026-10-23",
       "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": 0.32
+      "dividendYield": 0.31
     },
     {
       "code": "00907",
@@ -493,7 +461,7 @@
       "exDate": "2026-10-28",
       "cashDividend": 0.6,
       "stockDividend": 0.0,
-      "dividendYield": 3.87
+      "dividendYield": 3.9
     },
     {
       "code": "5522",
@@ -501,7 +469,7 @@
       "exDate": "2026-10-29",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 1.67
+      "dividendYield": 1.63
     }
   ]
 }
