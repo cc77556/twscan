@@ -1,21 +1,21 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-10-11",
-  "fetchedAt": "2026-10-11T17:30:11+08:00",
+  "lastUpdated": "2026-10-12",
+  "fetchedAt": "2026-10-12T17:30:15+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
       "value": 45,
-      "previous": 38,
+      "previous": 45,
       "label": "恐懼",
       "source": "CNN Fear & Greed Index",
       "sourceUrl": "https://www.cnn.com/markets/fear-and-greed"
     },
     "vix": {
-      "value": 14.84,
-      "previous": 15.52,
-      "change": -0.68,
-      "changePercent": -4.38,
+      "value": 15.45,
+      "previous": 15.01,
+      "change": 0.44,
+      "changePercent": 2.93,
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"
     }
@@ -31,7 +31,7 @@
       },
       {
         "name": "VIX",
-        "value": 14.8,
+        "value": 15.4,
         "threshold": ">28",
         "triggered": false,
         "desc": "波動率指數高於 28"
@@ -69,9 +69,9 @@
     {
       "name": "台灣加權",
       "symbol": "^TWII",
-      "value": 49313.44,
-      "change": 837.7,
-      "changePercent": 1.73,
+      "value": 49301.96,
+      "change": -410.08,
+      "changePercent": -0.82,
       "flag": "🇹🇼"
     },
     {
@@ -117,49 +117,49 @@
     {
       "name": "恆生指數",
       "symbol": "^HSI",
-      "value": 24211.35,
-      "change": 239.06,
-      "changePercent": 1.0,
+      "value": 24271.2,
+      "change": 230.86,
+      "changePercent": 0.96,
       "flag": "🇭🇰"
     },
     {
       "name": "USD/TWD",
       "symbol": "USDTWD=X",
-      "value": 31.92,
-      "change": 0.08,
-      "changePercent": 0.25,
+      "value": 31.93,
+      "change": 0.17,
+      "changePercent": 0.54,
       "flag": "💱"
     },
     {
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
-      "value": 102.23,
-      "change": 0.4,
-      "changePercent": 0.39,
+      "value": 102.31,
+      "change": 0.07,
+      "changePercent": 0.07,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
-      "value": 4216.3,
-      "change": 29.2,
-      "changePercent": 0.7,
+      "value": 4199.0,
+      "change": 58.3,
+      "changePercent": 1.41,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": 91.85,
-      "change": 2.41,
-      "changePercent": 2.69,
+      "value": 92.52,
+      "change": 4.24,
+      "changePercent": 4.8,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 82949.44,
-      "change": -326.49,
-      "changePercent": -0.39,
+      "value": 83366.74,
+      "change": 1690.4,
+      "changePercent": 2.07,
       "flag": "₿"
     }
   ],
@@ -192,20 +192,20 @@
   "macroSource": "U.S. Treasury / Fed",
   "macroSourceUrl": "https://finance.yahoo.com/markets/bonds/",
   "institutional": {
-    "date": "2026-10-08",
+    "date": "2026-10-12",
     "foreign": {
       "label": "外資",
-      "value": -758.52,
+      "value": -521.98,
       "unit": "億"
     },
     "investment": {
       "label": "投信",
-      "value": 30.09,
+      "value": 71.24,
       "unit": "億"
     },
     "dealer": {
       "label": "自營商",
-      "value": -187.31,
+      "value": -142.94,
       "unit": "億"
     },
     "source": "TWSE 證交所",
