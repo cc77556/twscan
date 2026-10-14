@@ -1,20 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-10-13",
-  "fetchedAt": "2026-10-13T17:30:06+08:00",
+  "lastUpdated": "2026-10-14",
+  "fetchedAt": "2026-10-14T17:30:06+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "1449",
-      "name": "佳和",
-      "exDate": "2026-10-12",
-      "cashDividend": 0.0,
-      "stockDividend": 0.00999999,
-      "dividendYield": null
-    },
     {
       "code": "1727",
       "name": "中華化",
@@ -29,7 +21,7 @@
       "exDate": "2026-10-15",
       "cashDividend": 0.131,
       "stockDividend": 0.0,
-      "dividendYield": 0.9
+      "dividendYield": 0.91
     },
     {
       "code": "1463",
@@ -43,49 +35,49 @@
       "code": "00851",
       "name": "台新全球AI",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 2.5,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 3.39
     },
     {
       "code": "00904",
       "name": "台新臺灣半導體30",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 2.2,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 5.12
     },
     {
       "code": "00936",
       "name": "台新永續高息中小",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 0.16,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 0.74
     },
     {
       "code": "00947",
       "name": "台新臺灣IC設計",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 5.17
     },
     {
       "code": "00962",
       "name": "台新AI優息動能",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 0.25,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.66
     },
     {
       "code": "009805",
       "name": "台新美國電力基建",
       "exDate": "2026-10-16",
-      "cashDividend": 0.0,
+      "cashDividend": 0.3,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.97
     },
     {
       "code": "00714",
@@ -181,7 +173,7 @@
       "exDate": "2026-10-19",
       "cashDividend": 0.36,
       "stockDividend": 0.0,
-      "dividendYield": 1.68
+      "dividendYield": 1.67
     },
     {
       "code": "00944",
@@ -309,7 +301,7 @@
       "exDate": "2026-10-19",
       "cashDividend": 0.73,
       "stockDividend": 0.0,
-      "dividendYield": 4.75
+      "dividendYield": 4.93
     },
     {
       "code": "00991B",
@@ -357,7 +349,7 @@
       "exDate": "2026-10-23",
       "cashDividend": 0.2,
       "stockDividend": 0.0,
-      "dividendYield": 1.19
+      "dividendYield": 1.2
     },
     {
       "code": "6931",
@@ -365,7 +357,7 @@
       "exDate": "2026-10-23",
       "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": 0.31
+      "dividendYield": 0.32
     },
     {
       "code": "00907",
@@ -389,7 +381,7 @@
       "exDate": "2026-10-28",
       "cashDividend": 0.6,
       "stockDividend": 0.0,
-      "dividendYield": 3.99
+      "dividendYield": 4.05
     },
     {
       "code": "2762",
@@ -397,7 +389,7 @@
       "exDate": "2026-10-29",
       "cashDividend": 1.807197,
       "stockDividend": 0.0,
-      "dividendYield": 2.33
+      "dividendYield": 2.32
     },
     {
       "code": "3563",
@@ -413,7 +405,7 @@
       "exDate": "2026-10-29",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 1.6
+      "dividendYield": 1.61
     }
   ]
 }
