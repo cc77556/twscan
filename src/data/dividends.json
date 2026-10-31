@@ -1,60 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-10-30",
-  "fetchedAt": "2026-10-30T17:30:02+08:00",
+  "lastUpdated": "2026-10-31",
+  "fetchedAt": "2026-10-31T17:30:00+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "0056",
-      "name": "元大高股息",
-      "exDate": "2026-10-22",
-      "cashDividend": 1.72,
-      "stockDividend": 0.0,
-      "dividendYield": 3.02
-    },
-    {
-      "code": "2028",
-      "name": "威致",
-      "exDate": "2026-10-23",
-      "cashDividend": 0.2,
-      "stockDividend": 0.0,
-      "dividendYield": 1.23
-    },
-    {
-      "code": "6931",
-      "name": "青松健康",
-      "exDate": "2026-10-23",
-      "cashDividend": 0.12,
-      "stockDividend": 0.0,
-      "dividendYield": 0.32
-    },
-    {
-      "code": "00907",
-      "name": "永豐優息存股",
-      "exDate": "2026-10-27",
-      "cashDividend": 0.268,
-      "stockDividend": 0.0,
-      "dividendYield": 1.46
-    },
-    {
-      "code": "2025",
-      "name": "千興",
-      "exDate": "2026-10-28",
-      "cashDividend": 0.0,
-      "stockDividend": 0.0,
-      "dividendYield": null
-    },
-    {
-      "code": "4552",
-      "name": "力達-KY",
-      "exDate": "2026-10-28",
-      "cashDividend": 0.6,
-      "stockDividend": 0.0,
-      "dividendYield": 4.14
-    },
     {
       "code": "2762",
       "name": "世界健身-KY",
@@ -69,7 +21,7 @@
       "exDate": "2026-10-29",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 0.14
+      "dividendYield": 0.15
     },
     {
       "code": "5522",
@@ -85,31 +37,31 @@
       "exDate": "2026-11-02",
       "cashDividend": 5.0,
       "stockDividend": 0.0,
-      "dividendYield": 10.33
+      "dividendYield": 10.44
     },
     {
       "code": "00406A",
       "name": "主動中信台灣收益",
       "exDate": "2026-11-03",
-      "cashDividend": 0.0,
+      "cashDividend": 0.138,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.6
     },
     {
       "code": "00939",
       "name": "統一台灣高息動能",
       "exDate": "2026-11-03",
-      "cashDividend": 0.0,
+      "cashDividend": 0.15,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 0.59
     },
     {
       "code": "00984D",
       "name": "主動聯博全球非投",
       "exDate": "2026-11-03",
-      "cashDividend": 0.0,
+      "cashDividend": 0.085,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 0.87
     },
     {
       "code": "00946",
@@ -141,7 +93,7 @@
       "exDate": "2026-11-04",
       "cashDividend": 0.4,
       "stockDividend": 0.0,
-      "dividendYield": 3.24
+      "dividendYield": 3.25
     },
     {
       "code": "8467",
@@ -149,7 +101,7 @@
       "exDate": "2026-11-04",
       "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": 2.0
+      "dividendYield": 2.06
     },
     {
       "code": "00400A",
@@ -176,12 +128,20 @@
       "dividendYield": null
     },
     {
+      "code": "00401A",
+      "name": "主動摩根台灣鑫收",
+      "exDate": "2026-11-13",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
       "code": "01007T",
       "name": "兆豐國泰R2",
       "exDate": "2026-11-19",
       "cashDividend": 0.215313,
       "stockDividend": 0.0,
-      "dividendYield": 1.92
+      "dividendYield": 1.91
     }
   ]
 }
