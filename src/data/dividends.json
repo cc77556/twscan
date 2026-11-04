@@ -1,7 +1,7 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-11-03",
-  "fetchedAt": "2026-11-03T17:30:01+08:00",
+  "lastUpdated": "2026-11-04",
+  "fetchedAt": "2026-11-04T17:30:00+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
@@ -13,7 +13,7 @@
       "exDate": "2026-11-02",
       "cashDividend": 5.0,
       "stockDividend": 0.0,
-      "dividendYield": 12.35
+      "dividendYield": 12.29
     },
     {
       "code": "00406A",
@@ -21,7 +21,7 @@
       "exDate": "2026-11-03",
       "cashDividend": 0.138,
       "stockDividend": 0.0,
-      "dividendYield": 1.61
+      "dividendYield": 1.73
     },
     {
       "code": "00939",
@@ -29,7 +29,7 @@
       "exDate": "2026-11-03",
       "cashDividend": 0.15,
       "stockDividend": 0.0,
-      "dividendYield": 0.6
+      "dividendYield": 0.62
     },
     {
       "code": "00984D",
@@ -37,7 +37,7 @@
       "exDate": "2026-11-03",
       "cashDividend": 0.085,
       "stockDividend": 0.0,
-      "dividendYield": 0.87
+      "dividendYield": 0.88
     },
     {
       "code": "00946",
@@ -45,7 +45,7 @@
       "exDate": "2026-11-04",
       "cashDividend": 0.058,
       "stockDividend": 0.0,
-      "dividendYield": 0.38
+      "dividendYield": 0.39
     },
     {
       "code": "00953B",
@@ -77,15 +77,15 @@
       "exDate": "2026-11-04",
       "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": 2.07
+      "dividendYield": 2.15
     },
     {
       "code": "00400A",
       "name": "主動國泰動能高息",
       "exDate": "2026-11-06",
-      "cashDividend": 0.0,
+      "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 0.93
     },
     {
       "code": "2414",
@@ -376,12 +376,20 @@
       "dividendYield": null
     },
     {
+      "code": "5434",
+      "name": "崇越",
+      "exDate": "2026-11-18",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
       "code": "01007T",
       "name": "兆豐國泰R2",
       "exDate": "2026-11-19",
       "cashDividend": 0.215313,
       "stockDividend": 0.0,
-      "dividendYield": 1.91
+      "dividendYield": 1.92
     },
     {
       "code": "0051",

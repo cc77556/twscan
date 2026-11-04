@@ -1,10 +1,20 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-11-03",
+  "lastUpdated": "2026-11-04",
   "source": "TWSE",
-  "fetchedAt": "2026-11-03T17:30:00+08:00",
+  "fetchedAt": "2026-11-04T17:30:00+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "2466",
+      "name": "冠西電",
+      "publishDate": "2026-11-03",
+      "count": 2,
+      "condition": "連續三次",
+      "period": "115/11/04～115/11/10",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準，且該股票於最近三十個營業日內曾發布處置交易資訊。"
+    },
     {
       "code": "4526",
       "name": "東台",
@@ -19,7 +29,7 @@
       "code": "2466",
       "name": "冠西電",
       "publishDate": "2026-10-29",
-      "count": 1,
+      "count": 2,
       "condition": "連續三次",
       "period": "115/10/30～115/11/05",
       "measure": "人工管制撮合",
