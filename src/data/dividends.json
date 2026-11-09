@@ -1,28 +1,12 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-11-08",
-  "fetchedAt": "2026-11-08T17:30:29+08:00",
+  "lastUpdated": "2026-11-09",
+  "fetchedAt": "2026-11-09T17:30:05+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
-    {
-      "code": "00400A",
-      "name": "主動國泰動能高息",
-      "exDate": "2026-11-06",
-      "cashDividend": 0.12,
-      "stockDividend": 0.0,
-      "dividendYield": 1.07
-    },
-    {
-      "code": "2414",
-      "name": "精技",
-      "exDate": "2026-11-06",
-      "cashDividend": 0.0,
-      "stockDividend": 0.0,
-      "dividendYield": null
-    },
     {
       "code": "00940",
       "name": "元大台灣價值高息",

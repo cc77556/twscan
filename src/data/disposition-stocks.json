@@ -1,10 +1,30 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "source": "TWSE",
-  "fetchedAt": "2026-11-08T17:30:29+08:00",
+  "fetchedAt": "2026-11-09T17:30:05+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "publishDate": "2026-11-06",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/11/09～115/11/13",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
+    {
+      "code": "2360",
+      "name": "致茂",
+      "publishDate": "2026-11-06",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/11/09～115/11/13",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
     {
       "code": "6213",
       "name": "聯茂",
