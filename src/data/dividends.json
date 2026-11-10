@@ -1,7 +1,7 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-11-09",
-  "fetchedAt": "2026-11-09T17:30:05+08:00",
+  "lastUpdated": "2026-11-10",
+  "fetchedAt": "2026-11-10T17:30:05+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
@@ -13,7 +13,7 @@
       "exDate": "2026-11-10",
       "cashDividend": 0.06,
       "stockDividend": 0.0,
-      "dividendYield": 0.51
+      "dividendYield": 0.5
     },
     {
       "code": "00401A",
@@ -67,9 +67,9 @@
       "code": "00690",
       "name": "兆豐藍籌30",
       "exDate": "2026-11-17",
-      "cashDividend": 0.0,
+      "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 3.01
     },
     {
       "code": "00692",
@@ -131,9 +131,9 @@
       "code": "00932",
       "name": "兆豐永續高息等權",
       "exDate": "2026-11-17",
-      "cashDividend": 0.0,
+      "cashDividend": 0.23,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.42
     },
     {
       "code": "00934",
@@ -155,9 +155,9 @@
       "code": "00943",
       "name": "兆豐電子高息等權",
       "exDate": "2026-11-17",
-      "cashDividend": 0.0,
+      "cashDividend": 0.35,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.84
     },
     {
       "code": "00944",
@@ -293,7 +293,7 @@
       "exDate": "2026-11-18",
       "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": 1.66
+      "dividendYield": 1.51
     },
     {
       "code": "5434",
@@ -309,7 +309,7 @@
       "exDate": "2026-11-19",
       "cashDividend": 0.215313,
       "stockDividend": 0.0,
-      "dividendYield": 1.94
+      "dividendYield": 1.93
     },
     {
       "code": "6924",
@@ -374,6 +374,22 @@
       "cashDividend": 0.0,
       "stockDividend": 0.0,
       "dividendYield": null
+    },
+    {
+      "code": "6655",
+      "name": "科定",
+      "exDate": "2026-11-24",
+      "cashDividend": 2.6,
+      "stockDividend": 0.0,
+      "dividendYield": 1.98
+    },
+    {
+      "code": "1707",
+      "name": "葡萄王",
+      "exDate": "2026-12-30",
+      "cashDividend": 1.9,
+      "stockDividend": 0.0,
+      "dividendYield": 2.36
     }
   ]
 }
