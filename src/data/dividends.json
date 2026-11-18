@@ -1,51 +1,19 @@
 {
   "title": "除權除息預告",
-  "lastUpdated": "2026-11-17",
-  "fetchedAt": "2026-11-17T17:30:03+08:00",
+  "lastUpdated": "2026-11-18",
+  "fetchedAt": "2026-11-18T17:30:05+08:00",
   "source": "TWSE（TWT48U 除權除息預告表）",
   "isSampleData": false,
   "disclaimer": "殖利率為本次現金股利除以最近收盤價之單次事件殖利率，非年化值；股票股利欄為無償配股率（新股/舊股）。",
   "note": "資料每日自動更新自台灣證券交易所公開端點。",
   "stocks": [
     {
-      "code": "00775B",
-      "name": "台新投等債15+",
-      "exDate": "2026-11-16",
-      "cashDividend": 0.35,
-      "stockDividend": 0.0,
-      "dividendYield": 1.13
-    },
-    {
-      "code": "00936",
-      "name": "台新永續高息中小",
-      "exDate": "2026-11-16",
-      "cashDividend": 0.16,
-      "stockDividend": 0.0,
-      "dividendYield": 0.86
-    },
-    {
-      "code": "00951",
-      "name": "台新日本半導體",
-      "exDate": "2026-11-16",
-      "cashDividend": 2.0,
-      "stockDividend": 0.0,
-      "dividendYield": 18.48
-    },
-    {
-      "code": "00962",
-      "name": "台新AI優息動能",
-      "exDate": "2026-11-16",
-      "cashDividend": 0.08,
-      "stockDividend": 0.0,
-      "dividendYield": 0.67
-    },
-    {
       "code": "006208",
       "name": "富邦台50",
       "exDate": "2026-11-17",
       "cashDividend": 3.88,
       "stockDividend": 0.0,
-      "dividendYield": 1.76
+      "dividendYield": 1.83
     },
     {
       "code": "00690",
@@ -53,7 +21,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": 3.02
+      "dividendYield": 3.22
     },
     {
       "code": "00692",
@@ -61,7 +29,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 1.721,
       "stockDividend": 0.0,
-      "dividendYield": 2.06
+      "dividendYield": 2.14
     },
     {
       "code": "00730",
@@ -69,7 +37,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.11,
       "stockDividend": 0.0,
-      "dividendYield": 0.42
+      "dividendYield": 0.43
     },
     {
       "code": "00878",
@@ -77,7 +45,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 1.25,
       "stockDividend": 0.0,
-      "dividendYield": 3.85
+      "dividendYield": 4.05
     },
     {
       "code": "00891",
@@ -85,7 +53,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 1.55,
       "stockDividend": 0.0,
-      "dividendYield": 5.1
+      "dividendYield": 5.55
     },
     {
       "code": "00892",
@@ -93,7 +61,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 4.0,
       "stockDividend": 0.0,
-      "dividendYield": 11.71
+      "dividendYield": 13.81
     },
     {
       "code": "00894",
@@ -101,7 +69,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": 2.58
+      "dividendYield": 2.76
     },
     {
       "code": "00900",
@@ -109,7 +77,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.075,
       "stockDividend": 0.0,
-      "dividendYield": 0.41
+      "dividendYield": 0.42
     },
     {
       "code": "00932",
@@ -117,7 +85,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.23,
       "stockDividend": 0.0,
-      "dividendYield": 1.44
+      "dividendYield": 1.48
     },
     {
       "code": "00934",
@@ -125,7 +93,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.5,
       "stockDividend": 0.0,
-      "dividendYield": 1.87
+      "dividendYield": 1.92
     },
     {
       "code": "00938",
@@ -133,7 +101,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.35,
       "stockDividend": 0.0,
-      "dividendYield": 1.35
+      "dividendYield": 1.39
     },
     {
       "code": "00943",
@@ -141,7 +109,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.35,
       "stockDividend": 0.0,
-      "dividendYield": 1.88
+      "dividendYield": 1.95
     },
     {
       "code": "00944",
@@ -149,7 +117,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.109,
       "stockDividend": 0.0,
-      "dividendYield": 0.55
+      "dividendYield": 0.56
     },
     {
       "code": "00945B",
@@ -157,7 +125,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.097,
       "stockDividend": 0.0,
-      "dividendYield": 0.66
+      "dividendYield": 0.67
     },
     {
       "code": "00952",
@@ -165,7 +133,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.12,
       "stockDividend": 0.0,
-      "dividendYield": 0.84
+      "dividendYield": 0.85
     },
     {
       "code": "00961",
@@ -173,7 +141,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.09,
       "stockDividend": 0.0,
-      "dividendYield": 0.71
+      "dividendYield": 0.73
     },
     {
       "code": "00963",
@@ -181,7 +149,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.1,
       "stockDividend": 0.0,
-      "dividendYield": 0.79
+      "dividendYield": 0.8
     },
     {
       "code": "00964",
@@ -189,7 +157,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.2,
       "stockDividend": 0.0,
-      "dividendYield": 1.46
+      "dividendYield": 1.5
     },
     {
       "code": "009808",
@@ -197,7 +165,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.76,
       "stockDividend": 0.0,
-      "dividendYield": 2.72
+      "dividendYield": 2.85
     },
     {
       "code": "00980A",
@@ -205,7 +173,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.688,
       "stockDividend": 0.0,
-      "dividendYield": 3.53
+      "dividendYield": 3.84
     },
     {
       "code": "00981T",
@@ -221,7 +189,7 @@
       "exDate": "2026-11-17",
       "cashDividend": 0.78,
       "stockDividend": 0.0,
-      "dividendYield": 4.36
+      "dividendYield": 4.78
     },
     {
       "code": "00982D",
@@ -245,7 +213,7 @@
       "exDate": "2026-11-18",
       "cashDividend": 1.828,
       "stockDividend": 0.0,
-      "dividendYield": 1.89
+      "dividendYield": 1.9
     },
     {
       "code": "00929",
@@ -253,7 +221,7 @@
       "exDate": "2026-11-18",
       "cashDividend": 0.38,
       "stockDividend": 0.0,
-      "dividendYield": 1.57
+      "dividendYield": 1.59
     },
     {
       "code": "00949",
@@ -261,7 +229,7 @@
       "exDate": "2026-11-18",
       "cashDividend": 3.02,
       "stockDividend": 0.0,
-      "dividendYield": 13.42
+      "dividendYield": 13.51
     },
     {
       "code": "00991B",
@@ -277,7 +245,7 @@
       "exDate": "2026-11-18",
       "cashDividend": 2.0,
       "stockDividend": 0.0,
-      "dividendYield": 1.77
+      "dividendYield": 1.81
     },
     {
       "code": "5434",
@@ -307,33 +275,33 @@
       "code": "0051",
       "name": "元大中型100",
       "exDate": "2026-11-20",
-      "cashDividend": 0.0,
+      "cashDividend": 4.5,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 3.63
     },
     {
       "code": "0055",
       "name": "元大MSCI金融",
       "exDate": "2026-11-20",
-      "cashDividend": 0.0,
+      "cashDividend": 2.7,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 5.37
     },
     {
       "code": "00771",
       "name": "元大US高息特別股",
       "exDate": "2026-11-20",
-      "cashDividend": 0.0,
+      "cashDividend": 0.21,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.42
     },
     {
       "code": "00850",
       "name": "元大臺灣ESG永續",
       "exDate": "2026-11-20",
-      "cashDividend": 0.0,
+      "cashDividend": 1.0,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 1.25
     },
     {
       "code": "4562",
@@ -365,7 +333,7 @@
       "exDate": "2026-11-24",
       "cashDividend": 2.6,
       "stockDividend": 0.0,
-      "dividendYield": 1.93
+      "dividendYield": 1.88
     },
     {
       "code": "009817",
@@ -389,7 +357,7 @@
       "exDate": "2026-11-30",
       "cashDividend": 0.5,
       "stockDividend": 0.0,
-      "dividendYield": 1.78
+      "dividendYield": 1.83
     },
     {
       "code": "00939",
@@ -424,12 +392,28 @@
       "dividendYield": null
     },
     {
+      "code": "00953B",
+      "name": "群益優選非投等債",
+      "exDate": "2026-12-03",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
+      "code": "00985B",
+      "name": "群益ESG投等債0-5",
+      "exDate": "2026-12-03",
+      "cashDividend": 0.0,
+      "stockDividend": 0.0,
+      "dividendYield": null
+    },
+    {
       "code": "020038",
       "name": "元大ESG配息N",
       "exDate": "2026-12-03",
       "cashDividend": 0.491,
       "stockDividend": 0.0,
-      "dividendYield": null
+      "dividendYield": 3.4
     },
     {
       "code": "1437",
@@ -438,6 +422,14 @@
       "cashDividend": 0.624652,
       "stockDividend": 0.0,
       "dividendYield": 2.09
+    },
+    {
+      "code": "3701",
+      "name": "大眾控",
+      "exDate": "2026-12-04",
+      "cashDividend": 0.199892,
+      "stockDividend": 0.0,
+      "dividendYield": 0.35
     },
     {
       "code": "7780",
@@ -461,7 +453,7 @@
       "exDate": "2026-12-21",
       "cashDividend": 1.8,
       "stockDividend": 0.0,
-      "dividendYield": 4.52
+      "dividendYield": 4.42
     },
     {
       "code": "1707",
@@ -469,7 +461,7 @@
       "exDate": "2026-12-30",
       "cashDividend": 1.9,
       "stockDividend": 0.0,
-      "dividendYield": 2.43
+      "dividendYield": 2.48
     }
   ]
 }
