@@ -1,21 +1,21 @@
 {
   "title": "全球市場總覽",
-  "lastUpdated": "2026-11-18",
-  "fetchedAt": "2026-11-18T17:30:13+08:00",
+  "lastUpdated": "2026-11-19",
+  "fetchedAt": "2026-11-19T17:30:09+08:00",
   "source": "Yahoo Finance / CNN / TWSE",
   "sentiment": {
     "fearGreed": {
-      "value": 26,
+      "value": 27,
       "previous": 25,
       "label": "恐懼",
       "source": "CNN Fear & Greed Index",
       "sourceUrl": "https://www.cnn.com/markets/fear-and-greed"
     },
     "vix": {
-      "value": 23.89,
-      "previous": 18.7,
-      "change": 5.19,
-      "changePercent": 27.75,
+      "value": 22.07,
+      "previous": 19.3,
+      "change": 2.77,
+      "changePercent": 14.35,
       "source": "Yahoo Finance",
       "sourceUrl": "https://finance.yahoo.com/quote/%5EVIX/"
     }
@@ -24,28 +24,28 @@
     "signals": [
       {
         "name": "F&G",
-        "value": 26,
+        "value": 27,
         "threshold": "<25",
         "triggered": false,
         "desc": "恐懼貪婪指數低於 25"
       },
       {
         "name": "VIX",
-        "value": 23.9,
+        "value": 22.1,
         "threshold": ">28",
         "triggered": false,
         "desc": "波動率指數高於 28"
       },
       {
         "name": "RSI",
-        "value": 37.2,
+        "value": 36.6,
         "threshold": "<35",
         "triggered": false,
         "desc": "S&P 500 RSI(14) 低於 35"
       },
       {
         "name": "200MA",
-        "value": -0.1,
+        "value": -0.3,
         "unit": "%",
         "threshold": "<-5%",
         "triggered": false,
@@ -53,7 +53,7 @@
       },
       {
         "name": "回撤",
-        "value": -6.1,
+        "value": -6.3,
         "unit": "%",
         "threshold": "<-12%",
         "triggered": false,
@@ -69,97 +69,97 @@
     {
       "name": "台灣加權",
       "symbol": "^TWII",
-      "value": 40194.91,
-      "change": -2896.96,
-      "changePercent": -6.72,
+      "value": 38426.89,
+      "change": -5248.23,
+      "changePercent": -12.02,
       "flag": "🇹🇼"
     },
     {
       "name": "S&P 500",
       "symbol": "^GSPC",
-      "value": 7340.53,
-      "change": -180.4,
-      "changePercent": -2.4,
+      "value": 7323.63,
+      "change": -295.75,
+      "changePercent": -3.88,
       "flag": "🇺🇸"
     },
     {
       "name": "NASDAQ 100",
       "symbol": "^NDX",
-      "value": 27001.78,
-      "change": -739.01,
-      "changePercent": -2.66,
+      "value": 27116.26,
+      "change": -1257.99,
+      "changePercent": -4.43,
       "flag": "🇺🇸"
     },
     {
       "name": "道瓊工業",
       "symbol": "^DJI",
-      "value": 50759.42,
-      "change": -1472.47,
-      "changePercent": -2.82,
+      "value": 50198.17,
+      "change": -2288.32,
+      "changePercent": -4.36,
       "flag": "🇺🇸"
     },
     {
       "name": "費半指數",
       "symbol": "^SOX",
-      "value": 9642.88,
-      "change": -355.45,
-      "changePercent": -3.56,
+      "value": 9652.8,
+      "change": -911.31,
+      "changePercent": -8.63,
       "flag": "🇺🇸"
     },
     {
       "name": "日經 225",
       "symbol": "^N225",
-      "value": 59024.28,
-      "change": -1795.08,
-      "changePercent": -2.95,
+      "value": 59444.21,
+      "change": -1698.14,
+      "changePercent": -2.78,
       "flag": "🇯🇵"
     },
     {
       "name": "恆生指數",
       "symbol": "^HSI",
-      "value": 23294.75,
-      "change": -1021.17,
-      "changePercent": -4.2,
+      "value": 22841.62,
+      "change": -1166.93,
+      "changePercent": -4.86,
       "flag": "🇭🇰"
     },
     {
       "name": "USD/TWD",
       "symbol": "USDTWD=X",
-      "value": 32.92,
-      "change": 0.06,
-      "changePercent": 0.18,
+      "value": 32.94,
+      "change": 0.0,
+      "changePercent": 0.0,
       "flag": "💱"
     },
     {
       "name": "美元指數",
       "symbol": "DX-Y.NYB",
-      "value": 103.85,
-      "change": 0.44,
-      "changePercent": 0.43,
+      "value": 103.66,
+      "change": 0.11,
+      "changePercent": 0.11,
       "flag": "💵"
     },
     {
       "name": "黃金",
       "symbol": "GC=F",
-      "value": 3769.9,
-      "change": -116.4,
-      "changePercent": -3.0,
+      "value": 3736.1,
+      "change": -116.9,
+      "changePercent": -3.03,
       "flag": "🥇"
     },
     {
       "name": "原油 WTI",
       "symbol": "CL=F",
-      "value": 83.1,
-      "change": -5.46,
-      "changePercent": -6.17,
+      "value": 82.83,
+      "change": -2.89,
+      "changePercent": -3.37,
       "flag": "🛢️"
     },
     {
       "name": "比特幣",
       "symbol": "BTC-USD",
-      "value": 64603.38,
-      "change": 475.33,
-      "changePercent": 0.74,
+      "value": 63617.23,
+      "change": -1687.83,
+      "changePercent": -2.58,
       "flag": "₿"
     }
   ],
@@ -168,7 +168,7 @@
   "macro": {
     "us10y": {
       "label": "美債 10Y 殖利率",
-      "value": 5.1,
+      "value": 5.07,
       "unit": "%"
     },
     "us13w": {
@@ -178,7 +178,7 @@
     },
     "yieldSpread": {
       "label": "10Y−13W 利差",
-      "value": 0.96,
+      "value": 0.93,
       "unit": "%",
       "status": "正常"
     },
@@ -192,20 +192,20 @@
   "macroSource": "U.S. Treasury / Fed",
   "macroSourceUrl": "https://finance.yahoo.com/markets/bonds/",
   "institutional": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "foreign": {
       "label": "外資",
-      "value": -765.64,
+      "value": -243.12,
       "unit": "億"
     },
     "investment": {
       "label": "投信",
-      "value": 175.58,
+      "value": 15.13,
       "unit": "億"
     },
     "dealer": {
       "label": "自營商",
-      "value": -42.02,
+      "value": -233.03,
       "unit": "億"
     },
     "source": "TWSE 證交所",
@@ -230,7 +230,7 @@
         "note": "趨勢健康"
       }
     },
-    "summary": "F&G 26（恐懼），RSI 37.2，EFFR 3.88%，殖利率曲線正常。規則綜合判定：中性偏多。",
+    "summary": "F&G 27（恐懼），RSI 36.6，EFFR 3.88%，殖利率曲線正常。規則綜合判定：中性偏多。",
     "disclaimer": "規則系統分析，僅供參考，不構成投資建議"
   }
 }
