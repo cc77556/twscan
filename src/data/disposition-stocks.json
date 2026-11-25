@@ -1,10 +1,30 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-11-24",
+  "lastUpdated": "2026-11-25",
   "source": "TWSE",
-  "fetchedAt": "2026-11-24T17:30:00+08:00",
+  "fetchedAt": "2026-11-25T17:30:03+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "6456",
+      "name": "GIS-KY",
+      "publishDate": "2026-11-24",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/11/25～115/12/01",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "publishDate": "2026-11-24",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/11/25～115/12/01",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
     {
       "code": "8996",
       "name": "高力",
