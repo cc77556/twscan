@@ -1,10 +1,30 @@
 {
   "title": "處置股票",
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-26",
   "source": "TWSE",
-  "fetchedAt": "2026-11-25T17:30:03+08:00",
+  "fetchedAt": "2026-11-26T17:30:00+08:00",
   "isSampleData": false,
   "stocks": [
+    {
+      "code": "3593",
+      "name": "力銘",
+      "publishDate": "2026-11-25",
+      "count": 1,
+      "condition": "連續三次",
+      "period": "115/11/26～115/12/02",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準。"
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "publishDate": "2026-11-25",
+      "count": 2,
+      "condition": "連續三次",
+      "period": "115/11/26～115/12/02",
+      "measure": "人工管制撮合",
+      "reason": "該有價證券之交易，連續三個營業日達本公司「公布注意交易資訊」標準，且該股票於最近三十個營業日內曾發布處置交易資訊。"
+    },
     {
       "code": "6456",
       "name": "GIS-KY",
@@ -99,7 +119,7 @@
       "code": "3532",
       "name": "台勝科",
       "publishDate": "2026-11-20",
-      "count": 1,
+      "count": 2,
       "condition": "連續三次",
       "period": "115/11/23～115/11/27",
       "measure": "人工管制撮合",
